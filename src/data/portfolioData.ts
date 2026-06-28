@@ -1,120 +1,67 @@
-// ─── Portfolio Data ─────────────────────────────────────────
-// Single source of truth for all portfolio content
+// ─────────────────────────────────────────────────────────────
+// portfolioData.ts
+//
+// Thin typed wrapper around src/config/portfolio.json.
+// All content lives in the JSON file — edit that to update
+// anything on the portfolio. This file only adds TypeScript
+// types so components get full autocomplete and safety.
+// ─────────────────────────────────────────────────────────────
 
-export const meta = {
-  name: 'S Utkantha Priyadarshini Reddy',
-  shortName: 'Utkantha',
-  role: 'MCA Candidate · Full-Stack Developer & ML Engineer',
-  tagline:
-    'Results-driven developer with hands-on experience in full-stack web development, machine learning, and deep learning. Passionate about building end-to-end AI-powered software solutions.',
-  location: 'Berhampur, Ganjam, Odisha, India',
-  email: 'sutkanthapdreddy@gmail.com',
-  phone: '+91-8917445015',
+import config from '../config/portfolio.json'
+
+// ── Types ──────────────────────────────────────────────────────
+
+export interface Meta {
+  name: string
+  shortName: string
+  role: string
+  tagline: string
+  location: string
+  email: string
+  phone: string
   links: {
-    github: 'https://github.com/Utkantha',
-    linkedin: 'https://linkedin.com/in/Utkantha',
-    leetcode: 'https://leetcode.com/Utkantha',
-  },
+    github: string
+    linkedin: string
+    leetcode: string
+  }
 }
 
-export const skillGroups = [
-  {
-    label: 'Languages',
-    tags: ['Python', 'JavaScript', 'SQL', 'HTML5', 'CSS3'],
-  },
-  {
-    label: 'Frameworks & Libraries',
-    tags: ['Flask', 'Keras', 'TensorFlow', 'scikit-learn', 'NumPy', 'Pandas', 'Matplotlib'],
-  },
-  {
-    label: 'ML / AI',
-    tags: [
-      'Deep Learning', 'CNN', 'LSTM', 'BiGRU', 'Self-Attention',
-      'Feature Engineering', 'Time Series', 'Regression', 'SVM',
-    ],
-  },
-  {
-    label: 'Databases & Dev Tools',
-    tags: ['MySQL', 'MongoDB', 'Oracle DB', 'Git', 'GitHub', 'VS Code', 'Jupyter Notebook'],
-  },
-  {
-    label: 'OS / Others',
-    tags: ['Windows', 'Linux', 'REST APIs', 'Responsive Web Design', 'Vercel'],
-  },
-]
+export interface NavLink {
+  label: string
+  href: string
+}
 
-export const education = [
-  {
-    degree: 'Master of Computer Applications (MCA)',
-    institution: 'Biju Pattnaik University of Technology (BPUT)',
-    location: 'Rourkela, Odisha, India',
-    period: 'Sep 2024 – Jul 2026',
-    bullets: [
-      'Focus on software development, data structures, algorithms, ML, and emerging technologies.',
-      'Building projects in deep learning, full-stack web dev, and AI-powered applications.',
-      'Engaging in coding challenges, collaborative teamwork, and research-oriented problem solving.',
-    ],
-  },
-  {
-    degree: 'Bachelor of Education (B.Ed.)',
-    institution: 'Dr. B.R. Ambedkar University',
-    location: 'Etcherla, Andhra Pradesh, India',
-    period: 'Sep 2022 – Aug 2024',
-    bullets: [
-      'Graduated with 8.3 CGPA.',
-      'Competencies in analytical thinking, structured communication, and instructional design.',
-      'Expertise in innovative teaching methodologies and curriculum planning.',
-    ],
-  },
-  {
-    degree: 'Bachelor of Science (B.Sc.) – Physics & Physical Science',
-    institution: 'Berhampur University',
-    location: 'Berhampur, Odisha, India',
-    period: 'Jul 2019 – Jul 2022',
-    bullets: [
-      'Graduated with 9.4 CGPA — secured First Position in the batch.',
-      'Strong foundation in analytical problem-solving and quantitative reasoning.',
-    ],
-  },
-]
+export interface SkillGroup {
+  label: string
+  tags: string[]
+}
 
-export const projects = [
-  {
-    emoji: '⚡',
-    title: 'Electricity Consumption Prediction',
-    description:
-      'End-to-end time series forecasting using a hybrid CNN-BiGRU-Self Attention deep learning architecture. Features MIC-based feature selection, MinMax normalisation, and a Flask REST API with admin-authenticated web interface for real-time predictions.',
-    tags: ['Python', 'Keras', 'CNN', 'BiGRU', 'Flask', 'scikit-learn'],
-    link: 'https://github.com/Utkantha',
-  },
-  {
-    emoji: '📚',
-    title: 'EduLearn – E-Learning Platform',
-    description:
-      'Fully responsive e-learning web application built with HTML5, CSS3, and vanilla JavaScript. Deployed on Vercel with CI/CD via GitHub Actions. Mobile-first design with interactive UI components.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'GitHub Actions', 'Vercel'],
-    link: 'https://github.com/Utkantha',
-  },
-  {
-    emoji: '🛒',
-    title: 'Yamazone – E-Commerce Demo',
-    description:
-      'Full-stack e-commerce app inspired by Amazon. Python Flask backend with HTML/CSS/JS frontend. Features product catalog API, Add-to-Cart, Buy Now simulation, Quick View modal, and personalised recommendations.',
-    tags: ['Python', 'Flask', 'JavaScript', 'REST API', 'Vercel'],
-    link: 'https://github.com/Utkantha',
-  },
-]
+export interface Education {
+  degree: string
+  institution: string
+  location: string
+  period: string
+  bullets: string[]
+}
 
-export const certifications = [
-  { name: 'SQL (Basic) Certificate', issuer: 'HackerRank' },
-  { name: 'SQL (Intermediate) Certificate', issuer: 'HackerRank' },
-  { name: 'Python (Basic) Certificate', issuer: 'HackerRank' },
-]
+export interface Project {
+  emoji: string
+  title: string
+  description: string
+  tags: string[]
+  link: string
+}
 
-export const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Education', href: '#education' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Certifications', href: '#certifications' },
-  { label: 'Contact', href: '#contact' },
-]
+export interface Certification {
+  name: string
+  issuer: string
+}
+
+// ── Typed exports (sourced entirely from portfolio.json) ────────
+
+export const meta           = config.meta           as Meta
+export const navLinks       = config.navLinks        as NavLink[]
+export const skillGroups    = config.skillGroups     as SkillGroup[]
+export const education      = config.education       as Education[]
+export const projects       = config.projects        as Project[]
+export const certifications = config.certifications  as Certification[]
