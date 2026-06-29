@@ -108,8 +108,20 @@
   ],
 
   "certifications": [
-    { "name": "SQL (Basic) Certificate",        "issuer": "HackerRank" },
-    { "name": "SQL (Intermediate) Certificate", "issuer": "HackerRank" },
-    { "name": "Python (Basic) Certificate",     "issuer": "HackerRank" }
+    {
+      "name": "SQL (Basic) Certificate",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/iframe/0bd2322510a3"
+    },
+    {
+      "name": "SQL (Intermediate) Certificate",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/iframe/28f0bff79daf"
+    },
+    {
+      "name": "Python (Basic) Certificate",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/iframe/51061d67698d"
+    }
   ]
 }
