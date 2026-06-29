@@ -13,41 +13,88 @@
       "leetcode": "https://leetcode.com/Utkantha"
     }
   },
-
   "navLinks": [
-    { "label": "About",           "href": "#about" },
-    { "label": "Education",       "href": "#education" },
-    { "label": "Projects",        "href": "#projects" },
-    { "label": "Certifications",  "href": "#certifications" },
-    { "label": "Contact",         "href": "#contact" }
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Education",
+      "href": "#education"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Certifications",
+      "href": "#certifications"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
   ],
-
   "skillGroups": [
     {
       "label": "Languages",
-      "tags": ["Python", "JavaScript", "SQL", "HTML5", "CSS3"]
+      "tags": [
+        "Python",
+        "JavaScript",
+        "SQL",
+        "HTML5",
+        "CSS3"
+      ]
     },
     {
       "label": "Frameworks & Libraries",
-      "tags": ["Flask", "Keras", "TensorFlow", "scikit-learn", "NumPy", "Pandas", "Matplotlib"]
+      "tags": [
+        "Flask",
+        "Keras",
+        "TensorFlow",
+        "scikit-learn",
+        "NumPy",
+        "Pandas",
+        "Matplotlib"
+      ]
     },
     {
       "label": "ML / AI",
       "tags": [
-        "Deep Learning", "CNN", "LSTM", "BiGRU", "Self-Attention",
-        "Feature Engineering", "Time Series", "Regression", "SVM"
+        "Deep Learning",
+        "CNN",
+        "LSTM",
+        "BiGRU",
+        "Self-Attention",
+        "Feature Engineering",
+        "Time Series",
+        "Regression",
+        "SVM"
       ]
     },
     {
       "label": "Databases & Dev Tools",
-      "tags": ["MySQL", "MongoDB", "Oracle DB", "Git", "GitHub", "VS Code", "Jupyter Notebook"]
+      "tags": [
+        "MySQL",
+        "MongoDB",
+        "Oracle DB",
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Jupyter Notebook"
+      ]
     },
     {
       "label": "OS / Others",
-      "tags": ["Windows", "Linux", "REST APIs", "Responsive Web Design", "Vercel"]
+      "tags": [
+        "Windows",
+        "Linux",
+        "REST APIs",
+        "Responsive Web Design",
+        "Vercel"
+      ]
     }
   ],
-
   "education": [
     {
       "degree": "Master of Computer Applications (MCA)",
@@ -82,46 +129,63 @@
       ]
     }
   ],
-
   "projects": [
     {
       "emoji": "⚡",
       "title": "Electricity Consumption Prediction",
       "description": "End-to-end time series forecasting using a hybrid CNN-BiGRU-Self Attention deep learning architecture. Features MIC-based feature selection, MinMax normalisation, and a Flask REST API with admin-authenticated web interface for real-time predictions.",
-      "tags": ["Python", "Keras", "CNN", "BiGRU", "Flask", "scikit-learn"],
+      "tags": [
+        "Python",
+        "Keras",
+        "CNN",
+        "BiGRU",
+        "Flask",
+        "scikit-learn"
+      ],
       "link": "https://github.com/Utkantha"
     },
     {
       "emoji": "📚",
       "title": "EduLearn – E-Learning Platform",
       "description": "Fully responsive e-learning web application built with HTML5, CSS3, and vanilla JavaScript. Deployed on Vercel with CI/CD via GitHub Actions. Mobile-first design with interactive UI components.",
-      "tags": ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Vercel"],
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "GitHub Actions",
+        "Vercel"
+      ],
       "link": "https://github.com/Utkantha"
     },
     {
       "emoji": "🛒",
       "title": "Yamazone – E-Commerce Demo",
       "description": "Full-stack e-commerce app inspired by Amazon. Python Flask backend with HTML/CSS/JS frontend. Features product catalog API, Add-to-Cart, Buy Now simulation, Quick View modal, and personalised recommendations.",
-      "tags": ["Python", "Flask", "JavaScript", "REST API", "Vercel"],
+      "tags": [
+        "Python",
+        "Flask",
+        "JavaScript",
+        "REST API",
+        "Vercel"
+      ],
       "link": "https://github.com/Utkantha"
     }
   ],
-
   "certifications": [
     {
       "name": "SQL (Basic) Certificate",
       "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/iframe/0bd2322510a3"
+      "link": "https://www.hackerrank.com/certificates/0bd2322510a3"
     },
     {
       "name": "SQL (Intermediate) Certificate",
       "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/iframe/28f0bff79daf"
+      "link": "https://www.hackerrank.com/certificates/28f0bff79daf"
     },
     {
       "name": "Python (Basic) Certificate",
       "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/iframe/51061d67698d"
+      "link": "https://www.hackerrank.com/certificates/51061d67698d"
     }
   ]
 }

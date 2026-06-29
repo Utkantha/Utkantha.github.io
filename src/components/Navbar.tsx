@@ -12,7 +12,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#hero" className="text-gradient text-lg font-extrabold tracking-tight shrink-0">
-          {meta.shortName}
+          {meta.shortName},
         </a>
 
         {/* Desktop links */}
