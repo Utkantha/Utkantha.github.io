@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { projects } from '../data/portfolioData'
 import { SectionHeader, Tag } from './ui'
 
-function ProjectCard({ emoji, title, description, tags, link, index }: typeof projects[0] & { index: number }) {
+function ProjectCard({ emoji, image, title, description, tags, link, index }: typeof projects[0] & { index: number }) {
   return (
     <motion.a
       href={link}
@@ -13,16 +13,31 @@ function ProjectCard({ emoji, title, description, tags, link, index }: typeof pr
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ scale: 1.02 }}
-      className="group flex flex-col bg-bg-card border border-white/[0.06] hover:border-accent/40 rounded-xl p-5 sm:p-6 transition-all duration-300 hover:shadow-glow-sm hover:bg-bg-hover"
+      className="group flex flex-col bg-bg-card border border-white/[0.06] hover:border-accent/40 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-glow-sm hover:bg-bg-hover"
     >
-      <div className="flex justify-between items-start mb-4">
-        <span className="text-3xl filter drop-shadow-md">{emoji}</span>
-        <span className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-ink-muted text-lg group-hover:text-white group-hover:border-accent/50 group-hover:bg-accent/20 transition-all duration-300">↗</span>
-      </div>
-      <h3 className="text-base font-bold text-white mb-2 leading-snug">{title}</h3>
-      <p className="text-sm text-ink-secondary leading-relaxed mb-5 flex-1">{description}</p>
-      <div className="flex flex-wrap gap-2">
-        {tags.map((tag) => <Tag key={tag} small>{tag}</Tag>)}
+      {/* Project Image */}
+      {image && (
+        <div className="w-full h-48 overflow-hidden relative border-b border-white/[0.06]">
+          <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
+          <img 
+            src={image} 
+            alt={title} 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
+
+      {/* Card Content */}
+      <div className="p-5 sm:p-6 flex flex-col flex-1">
+        <div className="flex justify-between items-start mb-4">
+          <span className="text-3xl filter drop-shadow-md">{emoji}</span>
+          <span className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-ink-muted text-lg group-hover:text-white group-hover:border-accent/50 group-hover:bg-accent/20 transition-all duration-300">↗</span>
+        </div>
+        <h3 className="text-base font-bold text-white mb-2 leading-snug">{title}</h3>
+        <p className="text-sm text-ink-secondary leading-relaxed mb-5 flex-1">{description}</p>
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => <Tag key={tag} small>{tag}</Tag>)}
+        </div>
       </div>
     </motion.a>
   )
