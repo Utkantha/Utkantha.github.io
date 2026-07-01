@@ -50,7 +50,7 @@ function EduCard({ degree, institution, location, period, bullets, index }: type
 
 export default function Education() {
   return (
-    <section id="education" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-primary/60 backdrop-blur-sm relative overflow-hidden">
+    <section id="education" className="py-16 sm:py-24 px-5 sm:px-8 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
       
