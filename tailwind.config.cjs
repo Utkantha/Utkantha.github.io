@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
@@ -8,21 +9,22 @@ module.exports = {
         mono: ['Fira Code', 'monospace'],
       },
       colors: {
+        border: 'var(--border-color)',
         bg: {
-          primary:   '#060610',
-          secondary: '#0c0c1a',
-          card:      '#111124',
-          hover:     '#161630',
+          primary:   'var(--bg-primary)',
+          secondary: 'var(--bg-secondary)',
+          card:      'var(--bg-card)',
+          hover:     'var(--bg-hover)',
         },
         accent: {
-          DEFAULT: '#6c63ff',
-          light:   '#9b94ff',
+          DEFAULT: 'var(--accent)',
+          light:   'var(--accent-light)',
           subtle:  'rgba(108,99,255,0.08)',
         },
         ink: {
-          primary:   '#eeeeff',
-          secondary: '#9d9bbf',
-          muted:     '#55537a',
+          primary:   'var(--ink-primary)',
+          secondary: 'var(--ink-secondary)',
+          muted:     'var(--ink-muted)',
         },
       },
       boxShadow: {

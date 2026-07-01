@@ -28,11 +28,11 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay }}
-      className="mb-6 bg-bg-card/50 border border-white/[0.05] p-4 rounded-xl"
+      className="mb-6 bg-bg-card/50 border border-border p-4 rounded-xl"
     >
       <div className="flex items-center gap-2 mb-3">
         <Icon className="w-4 h-4 text-accent-light" />
-        <p className="text-xs font-bold tracking-widest uppercase text-white">
+        <p className="text-xs font-bold tracking-widest uppercase text-ink-primary">
           {label}
         </p>
       </div>
@@ -40,7 +40,7 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
         {tags.map((tag) => (
           <span 
             key={tag} 
-            className="text-xs font-medium bg-white/5 border border-white/10 text-ink-secondary py-1.5 px-3 rounded-lg hover:bg-white/10 hover:text-white transition-colors cursor-default"
+            className="text-xs font-medium bg-black/5 dark:bg-white/5 border border-border text-ink-secondary py-1.5 px-3 rounded-lg hover:bg-black/10 hover:dark:bg-white/10 hover:text-ink-primary transition-colors cursor-default"
           >
             {tag}
           </span>
@@ -73,13 +73,13 @@ export default function About() {
             className="space-y-6"
           >
             <motion.p variants={textVariants} className="text-ink-primary text-base sm:text-lg leading-relaxed font-medium">
-              I'm an <span className="text-white font-semibold">MCA candidate at BPUT</span> with a deep passion for software engineering and application development. I enjoy crafting clean, performant web applications and backend systems that solve real-world problems.
+              I'm an <span className="text-ink-primary font-semibold">MCA candidate at BPUT</span> with a deep passion for software engineering and application development. I enjoy crafting clean, performant web applications and backend systems that solve real-world problems.
             </motion.p>
             <motion.p variants={textVariants} className="text-ink-secondary text-sm sm:text-base leading-relaxed">
               My journey spans from a Physics background to full-stack development — giving me a unique analytical perspective when approaching engineering challenges. I thrive in environments where I can build scalable architectures and interactive user experiences.
             </motion.p>
 
-            <motion.div variants={textVariants} className="pt-4 space-y-3 bg-bg-primary/50 border border-white/5 p-5 rounded-2xl">
+            <motion.div variants={textVariants} className="pt-4 space-y-3 bg-bg-primary/50 border border-border p-5 rounded-2xl">
               <InfoRow label="Location">{meta.location}</InfoRow>
               <InfoRow label="Email">
                 <a href={`mailto:${meta.email}`} className="text-accent-light hover:underline font-medium">
@@ -101,7 +101,7 @@ export default function About() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-lg font-bold text-white mb-6 flex items-center gap-2"
+              className="text-lg font-bold text-ink-primary mb-6 flex items-center gap-2"
             >
               Technical Arsenal
             </motion.p>

@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import FloatingBackground from './components/FloatingBackground'
 import Hero from './components/Hero'
 import About from './components/About'
 import Education from './components/Education'
@@ -10,6 +11,7 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+      <FloatingBackground />
       <Navbar />
       <main>
         <Hero />

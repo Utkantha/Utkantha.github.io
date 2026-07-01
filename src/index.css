@@ -5,15 +5,49 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Light Mode Variables */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-hover: #f1f5f9;
+    
+    --accent: #6c63ff;
+    --accent-light: #837cff;
+    
+    --ink-primary: #0f172a;
+    --ink-secondary: #334155;
+    --ink-muted: #64748b;
+
+    --border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    /* Dark Mode Variables (Original Theme) */
+    --bg-primary: #060610;
+    --bg-secondary: #0c0c1a;
+    --bg-card: #111124;
+    --bg-hover: #161630;
+    
+    --accent: #6c63ff;
+    --accent-light: #9b94ff;
+    
+    --ink-primary: #eeeeff;
+    --ink-secondary: #9d9bbf;
+    --ink-muted: #55537a;
+
+    --border-color: rgba(255, 255, 255, 0.06);
+  }
+
   html { scroll-behavior: smooth; }
 
   body {
-    @apply bg-bg-primary text-ink-primary font-sans antialiased overflow-x-hidden;
+    @apply bg-bg-primary text-ink-primary font-sans antialiased overflow-x-hidden transition-colors duration-300;
   }
 
   ::selection {
     background: rgba(108, 99, 255, 0.35);
-    color: #fff;
+    color: var(--ink-primary);
   }
 
   ::-webkit-scrollbar       { width: 5px; }

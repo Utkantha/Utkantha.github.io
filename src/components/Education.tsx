@@ -15,10 +15,10 @@ function EduCard({ degree, institution, location, period, bullets, index }: type
       {/* Timeline dot */}
       <div className="absolute -left-[7px] top-4 w-3 h-3 rounded-full bg-bg-primary border-2 border-accent group-hover:bg-accent group-hover:scale-125 group-hover:shadow-[0_0_12px_rgba(167,139,250,0.8)] transition-all duration-300" />
 
-      <div className="bg-bg-card hover:bg-bg-hover border border-white/[0.06] hover:border-accent/40 rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:translate-x-2 hover:shadow-glow-sm">
+      <div className="bg-bg-card hover:bg-bg-hover border border-border hover:border-accent/40 rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:translate-x-2 hover:shadow-glow-sm">
         {/* Degree + period */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4 mb-2">
-          <h3 className="text-base font-bold text-white leading-snug flex items-center gap-2">
+          <h3 className="text-base font-bold text-ink-primary leading-snug flex items-center gap-2">
             <GraduationCap className="w-5 h-5 text-accent-light shrink-0" />
             {degree}
           </h3>
@@ -35,7 +35,7 @@ function EduCard({ degree, institution, location, period, bullets, index }: type
         </p>
 
         {/* Bullets */}
-        <ul className="space-y-2 mt-4 pt-4 border-t border-white/[0.05]">
+        <ul className="space-y-2 mt-4 pt-4 border-t border-border">
           {bullets.map((b) => (
             <li key={b} className="text-sm text-ink-secondary flex gap-2.5">
               <span className="text-accent mt-0.5 shrink-0 text-lg leading-none">▸</span>

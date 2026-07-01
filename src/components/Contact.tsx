@@ -8,7 +8,7 @@ function SocialChip({ href, children }: { href: string; children: React.ReactNod
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/[0.08] bg-bg-card text-ink-secondary text-sm font-medium hover:border-accent/35 hover:text-ink-primary hover:bg-accent/8 transition-all hover:-translate-y-0.5"
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-bg-card text-ink-secondary text-sm font-medium hover:border-accent/35 hover:text-ink-primary hover:bg-accent/8 transition-all hover:-translate-y-0.5"
     >
       {children}
     </a>
@@ -29,7 +29,7 @@ export default function Contact() {
 
           <a
             href={`mailto:${meta.email}`}
-            className="text-accent-light text-sm font-medium border-b border-dashed border-accent/40 pb-px hover:text-white hover:border-white transition-colors break-all"
+            className="text-accent-light text-sm font-medium border-b border-dashed border-accent/40 pb-px hover:text-ink-primary hover:border-ink-primary transition-colors break-all"
           >
             {meta.email}
           </a>

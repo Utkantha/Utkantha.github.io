@@ -53,7 +53,7 @@ interface TagProps { children: ReactNode; small?: boolean }
 export function Tag({ children, small }: TagProps) {
   return (
     <span
-      className={`inline-block font-mono rounded-full border border-white/[0.07] bg-accent/8 text-ink-muted
+      className={`inline-block font-mono rounded-full border border-border bg-accent/8 text-ink-muted
         transition-colors hover:border-accent/40 hover:bg-accent/15
         ${small ? 'px-2 py-0.5 text-[0.68rem]' : 'px-3 py-1 text-xs'}`}
     >
@@ -74,7 +74,7 @@ interface ButtonProps {
 export function Button({ href, variant = 'primary', download, children, external }: ButtonProps) {
   const base = 'inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200'
   const styles = {
-    primary: 'bg-gradient-accent text-white shadow-glow-sm hover:-translate-y-0.5 hover:shadow-glow',
+    primary: 'bg-gradient-accent text-white shadow-glow-sm hover:-translate-y-0.5 hover:shadow-glow', // keep text-white since it's a solid gradient button
     outline: 'border border-accent/40 text-ink-primary hover:bg-accent/8 hover:border-accent-light hover:-translate-y-0.5',
   }
 
