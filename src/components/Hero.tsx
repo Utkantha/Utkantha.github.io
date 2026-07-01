@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profileImage from '../assets/profile_image.jfif';
+import profileImage from '../assets/profile_image.png';
 import resumePdf from '../assets/sutkanthapdreddy_resume.pdf';
 import { meta } from '../data/portfolioData';
 import { Button } from './ui';
@@ -85,8 +85,9 @@ export default function Hero() {
                 src={profileImage}
                 alt={meta.name}
                 className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-border shadow-2xl z-10"
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                transition={{ type: "spring" as const, stiffness: 300, damping: 20 }}
               />
             </div>
           </motion.div>
