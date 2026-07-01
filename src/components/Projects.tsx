@@ -43,40 +43,39 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
         </div>
       )}
 
+      {/* Action Links Floating on the middle right */}
+      <div className="absolute right-4 top-1/2 mt-12 sm:mt-16 -translate-y-1/2 flex flex-col gap-4 z-20">
+        <a 
+          href={links.github} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="p-2 rounded-full bg-bg-primary border border-border text-ink-muted hover:text-ink-primary hover:border-accent/50 hover:bg-accent/10 transition-all shadow-glow-sm"
+          title="View Source on GitHub"
+        >
+          <GithubIcon className="w-5 h-5" />
+        </a>
+        <a 
+          href={links.website} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="p-2 rounded-full bg-bg-primary border border-border text-ink-muted hover:text-accent-light hover:border-accent/50 hover:bg-accent/10 transition-all shadow-glow-sm"
+          title="Visit Live Website"
+        >
+          <ExternalLink className="w-5 h-5" />
+        </a>
+      </div>
+
       {/* Card Content */}
-      <div className="p-5 sm:p-6 flex flex-col flex-1">
+      <div className="p-5 sm:p-6 flex flex-col flex-1 pr-14 sm:pr-16">
         <div className="flex justify-between items-start mb-4">
           <span className="text-3xl filter drop-shadow-md">{emoji}</span>
         </div>
         <h3 className="text-base font-bold text-ink-primary mb-2 leading-snug">{title}</h3>
-        <p className="text-sm text-ink-secondary leading-relaxed mb-8 flex-1">{description}</p>
+        <p className="text-sm text-ink-secondary leading-relaxed mb-6 flex-1">{description}</p>
         
-        {/* Bottom section with Tags and Links */}
-        <div className="flex justify-between items-end gap-4 mt-auto pt-4 border-t border-border">
-          <div className="flex flex-wrap gap-2 flex-1">
-            {tags.map((tag) => <Tag key={tag} small>{tag}</Tag>)}
-          </div>
-          
-          <div className="flex items-center gap-3 shrink-0">
-            <a 
-              href={links.github} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-ink-muted hover:text-ink-primary transition-colors"
-              title="View Source on GitHub"
-            >
-              <GithubIcon className="w-5 h-5" />
-            </a>
-            <a 
-              href={links.website} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-ink-muted hover:text-accent-light transition-colors"
-              title="Visit Live Website"
-            >
-              <ExternalLink className="w-5 h-5" />
-            </a>
-          </div>
+        {/* Bottom section with Tags */}
+        <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border">
+          {tags.map((tag) => <Tag key={tag} small>{tag}</Tag>)}
         </div>
       </div>
     </motion.div>

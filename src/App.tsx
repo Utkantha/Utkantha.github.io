@@ -13,7 +13,7 @@ export default function App() {
     <>
       <FloatingBackground />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Education />
