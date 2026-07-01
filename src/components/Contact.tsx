@@ -1,5 +1,5 @@
 import { meta } from '../data/portfolioData'
-import resumePdf from '../assets/sutkanthapdr_resume.pdf'
+import resumePdf from '../assets/sutkanthapdreddy_resume.pdf'
 import { SectionHeader, Button } from './ui'
 
 function SocialChip({ href, children }: { href: string; children: React.ReactNode }) {

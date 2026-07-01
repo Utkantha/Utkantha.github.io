@@ -1,5 +1,5 @@
 import profileImage from '../assets/profile_image.jfif'
-import resumePdf from '../assets/sutkanthapdr_resume.pdf'
+import resumePdf from '../assets/sutkanthapdreddy_resume.pdf'
 import { meta } from '../data/portfolioData'
 import { Button } from './ui'
 
