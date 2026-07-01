@@ -36,7 +36,7 @@ export default function FloatingBackground() {
         size: Math.random() * 25 + 20,
         left: Math.random() * 100,
         top: Math.random() * 100,
-        duration: Math.random() * 20 + 25,
+        duration: Math.random() * 15 + 10, // Reduced from 20+25 to 15+10 (faster animations)
         delay: Math.random() * -20,
         xOffset: Math.random() * 100 - 50,
         yOffset: Math.random() * 100 - 50,
