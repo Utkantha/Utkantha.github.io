@@ -57,7 +57,7 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary relative">
+    <section id="about" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary/60 backdrop-blur-sm relative">
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Who I am" title="About Me" />
 

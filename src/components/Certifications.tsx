@@ -71,7 +71,7 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-primary relative overflow-hidden">
+    <section id="certifications" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-primary/60 backdrop-blur-sm relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="max-w-5xl mx-auto relative z-10">
         <SectionHeader label="Credentials" title="Certifications" />

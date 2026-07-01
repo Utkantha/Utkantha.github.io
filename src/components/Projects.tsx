@@ -84,7 +84,7 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary relative">
+    <section id="projects" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary/60 backdrop-blur-sm relative">
       <div className="max-w-5xl mx-auto relative z-10">
         <SectionHeader label="What I've Built" title="Featured Projects" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 sm:gap-6 mt-8">
