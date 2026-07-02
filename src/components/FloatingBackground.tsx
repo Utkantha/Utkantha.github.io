@@ -36,8 +36,8 @@ export default function FloatingBackground() {
         size: Math.random() * 25 + 20,
         left: Math.random() * 100,
         top: Math.random() * 100,
-        duration: Math.random() * 15 + 10, // Reduced from 20+25 to 15+10 (faster animations)
-        delay: Math.random() * -20,
+        duration: Math.random() * 8 + 5, // Reduced from 15+10 to 8+5 (much faster animations)
+        delay: Math.random() * -10,
         xOffset: Math.random() * 100 - 50,
         yOffset: Math.random() * 100 - 50,
         rotate: Math.random() * 360,
@@ -58,13 +58,13 @@ export default function FloatingBackground() {
               x: [0, el.xOffset, 0],
               y: [0, el.yOffset, 0],
               rotate: [0, el.rotate, 360],
-              opacity: [0.15, 0.4, 0.15]
+              opacity: [0, 0.8, 0.8, 0] // Higher opacity, starts/ends transparent
             }}
             transition={{
-              duration: el.duration,
-              delay: el.delay,
-              repeat: Infinity,
-              ease: "linear"
+              x: { duration: el.duration, repeat: Infinity, ease: "linear", delay: el.delay },
+              y: { duration: el.duration, repeat: Infinity, ease: "linear", delay: el.delay },
+              rotate: { duration: el.duration, repeat: Infinity, ease: "linear", delay: el.delay },
+              opacity: { duration: el.duration, repeat: Infinity, times: [0, 0.1, 0.9, 1], ease: "easeInOut", delay: el.delay }
             }}
             style={{
               position: 'absolute',
