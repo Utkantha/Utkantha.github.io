@@ -18,6 +18,27 @@ export default function Hero() {
     show: { opacity: 1, x: 0, transition: { type: "spring" as const, stiffness: 300, damping: 24 } }
   };
 
+  const nameVariants = {
+    hidden: { opacity: 0, y: 100, scale: 0.8, rotateX: 20 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1, 
+      rotateX: 0,
+      transition: { type: "spring" as const, stiffness: 120, damping: 12, delay: 0.3 } 
+    }
+  };
+
+  const photoVariants = {
+    hidden: { opacity: 0, y: 80, scale: 0.9 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1, 
+      transition: { type: "spring" as const, stiffness: 150, damping: 15, delay: 0.5 } 
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -44,7 +65,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Name */}
-            <motion.div variants={itemVariants}>
+            <motion.div variants={nameVariants} style={{ perspective: 1000 }}>
               <h1 className="text-[2.5rem] sm:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-4">
                 S Utkantha<br />
                 <span className="text-gradient">Priyadarshini Reddy</span>
@@ -75,7 +96,7 @@ export default function Hero() {
           {/* ── Photo & Floating Skills ── */}
           <motion.div 
             className="order-1 md:order-2 flex justify-center items-center relative"
-            variants={itemVariants}
+            variants={photoVariants}
           >
             <div className="relative">
               {/* Glow Behind Image */}
