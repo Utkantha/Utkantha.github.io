@@ -24,22 +24,22 @@ const GithubIcon = ({ className }: { className?: string }) => (
 function ProjectCard({ emoji, image, title, description, tags, links, index }: typeof projects[0] & { index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, y: 100, scale: 0.8, rotateX: 10 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ 
         type: "spring",
-        stiffness: 200,
-        damping: 20,
-        delay: index * 0.15 
+        stiffness: 150,
+        damping: 15,
+        delay: index * 0.1 
       }}
       whileHover={{ 
-        y: -12,
-        scale: 1.02,
-        rotate: -1,
-        transition: { type: "spring", stiffness: 300, damping: 15 }
+        y: -15,
+        scale: 1.05,
+        rotate: 2,
+        transition: { type: "spring", stiffness: 400, damping: 10 }
       }}
-      className="group flex flex-col bg-bg-card border border-border hover:border-accent/50 rounded-xl overflow-hidden transition-colors duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] relative"
+      className="group flex flex-col bg-bg-card border border-border hover:border-accent rounded-xl overflow-hidden transition-colors duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(var(--accent-rgb),0.6)] relative z-10 hover:z-20"
     >
       {/* Project Image */}
       {image && (
