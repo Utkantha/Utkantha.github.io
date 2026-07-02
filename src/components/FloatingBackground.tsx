@@ -58,7 +58,7 @@ export default function FloatingBackground() {
               x: [0, el.xOffset, 0],
               y: [0, el.yOffset, 0],
               rotate: [0, el.rotate, 360],
-              opacity: [0, 0.8, 0.8, 0] // Higher opacity, starts/ends transparent
+              opacity: [0, 0.25, 0.25, 0] // Reduced opacity for a professional look
             }}
             transition={{
               x: { duration: el.duration, repeat: Infinity, ease: "linear", delay: el.delay },
