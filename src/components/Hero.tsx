@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profileImage from '../assets/profile_image.png';
+import profileImage from '../assets/prfl.jpeg';
 import resumePdf from '../assets/sutkanthapdreddy_resume.pdf';
 import { meta } from '../data/portfolioData';
 import { Button } from './ui';
