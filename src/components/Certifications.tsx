@@ -45,10 +45,10 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
   const sharedClassName = 'group flex flex-col justify-between gap-4 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-accent/50 hover:bg-bg-hover hover:shadow-glow-sm block'
 
   const motionProps = {
-    initial: { opacity: 0, x: -30 },
+    initial: { opacity: 0, x: -100 },
     whileInView: { opacity: 1, x: 0 },
     viewport: { once: true, margin: "-50px" },
-    transition: { duration: 0.5, delay: index * 0.1 },
+    transition: { type: "spring" as const, stiffness: 100, damping: 15, delay: index * 0.1 },
     whileHover: { scale: 1.03 }
   }
 
