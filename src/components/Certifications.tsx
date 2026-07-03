@@ -42,7 +42,7 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
     </>
   )
 
-  const sharedClassName = 'group flex flex-col justify-between gap-4 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-accent/50 hover:bg-bg-hover hover:shadow-glow-sm block'
+  const sharedClassName = 'group flex flex-col justify-between gap-4 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 transition-colors transition-shadow duration-300 hover:border-accent/50 hover:bg-bg-hover hover:shadow-glow-sm block'
 
   const motionProps = {
     initial: { opacity: 0, x: -100 },
