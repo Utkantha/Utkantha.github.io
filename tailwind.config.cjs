@@ -30,12 +30,12 @@ module.exports = {
       boxShadow: {
         glow:     '0 0 40px rgba(108,99,255,0.28)',
         'glow-sm':'0 4px 22px rgba(108,99,255,0.22)',
-        card:     '0 20px 50px rgba(0,0,0,0.35)',
+        card:     'var(--shadow-card)',
       },
       backgroundImage: {
         'gradient-accent': 'linear-gradient(135deg, #6c63ff 0%, #a78bfa 50%, #c084fc 100%)',
-        'gradient-text':   'linear-gradient(135deg, #c4bfff, #a78bfa, #6c63ff)',
-        'gradient-hero':   'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,0.13) 0%, transparent 70%)',
+        'gradient-text':   'linear-gradient(135deg, var(--gradient-text-start), var(--gradient-text-mid), var(--gradient-text-end))',
+        'gradient-hero':   'var(--hero-glow)',
         'grid-lines': [
           'linear-gradient(rgba(108,99,255,0.04) 1px, transparent 1px)',
           'linear-gradient(90deg, rgba(108,99,255,0.04) 1px, transparent 1px)',
