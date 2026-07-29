@@ -150,6 +150,51 @@
         "github": "https://github.com/Utkantha/yamazone",
         "website": "https://yamazone.vercel.app/"
       }
+    },
+    {
+      "emoji": "✨",
+      "image": "/auradex.jpg",
+      "title": "Aura Dex",
+      "description": "AuraDex is a modern, beautifully designed full-stack Pokédex application featuring a premium glassmorphism UI, smooth animations, and real-time data powered by the PokéAPI.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Web"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/aura-dex",
+        "website": "https://utkantha.github.io/aura-dex/"
+      }
+    },
+    {
+      "emoji": "☁️",
+      "image": "/nexuscloud.jpg",
+      "title": "Nexus Cloud",
+      "description": "A modern, full-stack cloud storage application featuring secure file management, granular sharing permissions, and a responsive interface built with the MERN stack.",
+      "tags": [
+        "TypeScript",
+        "Cloud",
+        "Storage"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/Nexuscloud",
+        "website": "https://utkantha.github.io/Nexuscloud/"
+      }
+    },
+    {
+      "emoji": "🐾",
+      "image": "/pawfectmatch.jpg",
+      "title": "Pawfect Match",
+      "description": "A modern, full-stack MERN pet adoption platform designed to seamlessly connect animal welfare organizations with loving homes.",
+      "tags": [
+        "JavaScript",
+        "HTML5",
+        "CSS3"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/pawfect_match",
+        "website": "https://pawfectmatch-hazel.vercel.app/"
+      }
     }
   ],
   "certifications": [

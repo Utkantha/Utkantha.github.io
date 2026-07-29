@@ -43,7 +43,7 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
     >
       {/* Project Image */}
       {image && (
-        <div className="w-full h-48 overflow-hidden relative border-b border-border">
+        <div className="w-full aspect-video overflow-hidden relative border-b border-border">
           <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none mix-blend-overlay" />
           <img 
             src={image} 
