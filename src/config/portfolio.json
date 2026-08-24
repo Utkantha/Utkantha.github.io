@@ -40,10 +40,12 @@
       "label": "Languages",
       "tags": [
         "Python",
-        "JavaScript",
         "SQL",
-        "HTML5",
-        "CSS3"
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React.js",
+        "TypeScript"
       ]
     },
     {
@@ -51,7 +53,18 @@
       "tags": [
         "MySQL",
         "MongoDB",
-        "Oracle Database"
+        "Oracle Database",
+        "Microsoft SQL Server"
+      ]
+    },
+    {
+      "label": "Data & Analytics",
+      "tags": [
+        "Tableau",
+        "Power BI",
+        "Data Analysis",
+        "Data Visualization",
+        "MS Excel"
       ]
     },
     {
@@ -71,14 +84,6 @@
         "Linux",
         "Responsive Web Design",
         "Vercel Deployment"
-      ]
-    },
-    {
-      "label": "Productivity",
-      "tags": [
-        "MS Word",
-        "MS Excel",
-        "MS PowerPoint"
       ]
     }
   ],
@@ -213,6 +218,18 @@
     }
   ],
   "certifications": [
+    {
+      "name": "Data Analytics Job Simulation",
+      "issuer": "Deloitte Australia"
+    },
+    {
+      "name": "GenAI Powered Data Analytics Job Simulation",
+      "issuer": "Tata"
+    },
+    {
+      "name": "Introduction to Cybersecurity Job Simulation",
+      "issuer": "Commonwealth Bank"
+    },
     {
       "name": "SQL (Basic) Certificate",
       "issuer": "HackerRank",
