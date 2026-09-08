@@ -154,7 +154,7 @@
     {
       "emoji": "✨",
       "image": "/auradex.jpg",
-      "title": "Aura Dex",
+      "title": "Aura Dex – Pokédex Web App",
       "description": "AuraDex is a modern, beautifully designed full-stack Pokédex application featuring a premium glassmorphism UI, smooth animations, and real-time data powered by the PokéAPI.",
       "tags": [
         "TypeScript",
@@ -169,7 +169,7 @@
     {
       "emoji": "☁️",
       "image": "/nexuscloud.jpg",
-      "title": "Nexus Cloud",
+      "title": "Nexus Cloud – Cloud Storage Drive",
       "description": "A modern, full-stack cloud storage application featuring secure file management, granular sharing permissions, and a responsive interface built with the MERN stack.",
       "tags": [
         "TypeScript",
@@ -184,7 +184,7 @@
     {
       "emoji": "🐾",
       "image": "/pawfectmatch.jpg",
-      "title": "Pawfect Match",
+      "title": "Pawfect Match – Pet Adoption Platform",
       "description": "A modern, full-stack MERN pet adoption platform designed to seamlessly connect animal welfare organizations with loving homes.",
       "tags": [
         "JavaScript",
