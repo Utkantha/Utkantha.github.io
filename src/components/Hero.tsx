@@ -67,7 +67,7 @@ export default function Hero() {
             {/* Name */}
             <motion.div variants={nameVariants} style={{ perspective: 1000 }}>
               <h1 className="text-[2.5rem] sm:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-4">
-                S Utkantha<br />
+                <span className="text-gradient">S Utkantha</span><br />
                 <span className="text-gradient">Priyadarshini Reddy</span>
               </h1>
             </motion.div>
