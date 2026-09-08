@@ -24,21 +24,31 @@ const GithubIcon = ({ className }: { className?: string }) => (
 function ProjectCard({ emoji, image, title, description, tags, links, index }: typeof projects[0] & { index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ scale: 1.02 }}
-      className="group flex flex-col bg-bg-card border border-border hover:border-accent/40 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-glow-sm hover:bg-bg-hover relative"
+      transition={{ 
+        type: "spring",
+        stiffness: 200,
+        damping: 20,
+        delay: index * 0.15 
+      }}
+      whileHover={{ 
+        y: -12,
+        scale: 1.02,
+        rotate: -1,
+        transition: { type: "spring", stiffness: 300, damping: 15 }
+      }}
+      className="group flex flex-col bg-bg-card border border-border hover:border-accent/50 rounded-xl overflow-hidden transition-colors duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] relative"
     >
       {/* Project Image */}
       {image && (
         <div className="w-full h-48 overflow-hidden relative border-b border-border">
-          <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
+          <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none mix-blend-overlay" />
           <img 
             src={image} 
             alt={title} 
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-1 transition-transform duration-700 ease-out"
           />
         </div>
       )}
