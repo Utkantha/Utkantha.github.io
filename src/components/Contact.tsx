@@ -17,7 +17,7 @@ function SocialChip({ href, children }: { href: string; children: React.ReactNod
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary">
+    <section id="contact" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary/60 backdrop-blur-sm">
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Get In Touch" title="Let's Work Together" />
 

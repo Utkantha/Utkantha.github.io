@@ -40,7 +40,7 @@ export default function FloatingBackground() {
               x: [0, el.xOffset, 0],
               y: [0, el.yOffset, 0],
               rotate: [0, el.rotate, 360],
-              opacity: [0.03, 0.12, 0.03]
+              opacity: [0.1, 0.3, 0.1]
             }}
             transition={{
               duration: el.duration,
@@ -56,7 +56,7 @@ export default function FloatingBackground() {
           >
             <Icon 
               size={el.size} 
-              className="text-ink-muted dark:text-ink-secondary mix-blend-luminosity" 
+              className="text-accent/30 dark:text-accent-light/30" 
             />
           </motion.div>
         )
