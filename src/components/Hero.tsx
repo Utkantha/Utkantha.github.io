@@ -3,38 +3,6 @@ import profileImage from '../assets/profile_image.jfif';
 import resumePdf from '../assets/sutkanthapdreddy_resume.pdf';
 import { meta } from '../data/portfolioData';
 import { Button } from './ui';
-import { Code2, Database, Layout } from 'lucide-react';
-
-/* ── Floating Animation Variants ── */
-const floatingAnimation = {
-  y: ['-10%', '10%'],
-  transition: {
-    duration: 3,
-    repeat: Infinity,
-    repeatType: "reverse" as const,
-    ease: "easeInOut" as const,
-  }
-};
-
-/* ── Floating Badge Component ── */
-function FloatingBadge({ icon: Icon, label, className, delay = 0 }: { icon: any, label: string, className: string, delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, delay }}
-      className={`absolute z-20 ${className}`}
-    >
-      <motion.div
-        animate={floatingAnimation}
-        className="flex items-center gap-2 bg-bg-card/80 backdrop-blur-md border border-white/10 shadow-glow-sm rounded-full py-2 px-4"
-      >
-        <Icon className="w-4 h-4 text-accent-light" />
-        <span className="text-xs font-semibold text-white tracking-wide">{label}</span>
-      </motion.div>
-    </motion.div>
-  );
-}
 
 export default function Hero() {
   const containerVariants = {
@@ -118,27 +86,7 @@ export default function Hero() {
                 alt={meta.name}
                 className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-white/10 shadow-2xl z-10"
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              />
-
-              {/* Floating Badges */}
-              <FloatingBadge 
-                icon={Code2} 
-                label="Python" 
-                className="-top-4 -left-8 md:-top-6 md:-left-12"
-                delay={0.2}
-              />
-              <FloatingBadge 
-                icon={Layout} 
-                label="Full-Stack" 
-                className="top-1/2 -right-12 md:-right-16 translate-x-4 md:translate-x-8"
-                delay={0.6}
-              />
-              <FloatingBadge 
-                icon={Database} 
-                label="SQL & MongoDB" 
-                className="-bottom-6 -left-4 md:-bottom-8 md:-left-8"
-                delay={0.4}
+                transition={{ type: "spring" as const, stiffness: 300, damping: 20 }}
               />
             </div>
           </motion.div>
