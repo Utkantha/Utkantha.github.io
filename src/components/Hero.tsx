@@ -85,6 +85,10 @@ export default function Hero() {
                 src={profileImage}
                 alt={meta.name}
                 className="relative w-64 sm:w-80 md:w-96 h-auto object-contain z-10 drop-shadow-2xl"
+                style={{ 
+                  maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
+                }}
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 whileHover={{ scale: 1.05, rotate: 2 }}
