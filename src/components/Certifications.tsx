@@ -16,7 +16,7 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
 
         {/* Name & issuer */}
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-bold text-white leading-snug group-hover:text-accent-light transition-colors">
+          <p className="text-sm font-bold text-ink-primary leading-snug group-hover:text-accent-light transition-colors">
             {name}
           </p>
           <div className="flex items-center gap-1.5 mt-1.5">
@@ -28,11 +28,11 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
       </div>
 
       {/* Bottom: always-visible "View Certificate" link */}
-      <div className="flex items-center justify-between pt-4 mt-2 border-t border-white/[0.05]">
-        <span className="text-xs font-semibold text-accent-light group-hover:text-white transition-colors">
+      <div className="flex items-center justify-between pt-4 mt-2 border-t border-border">
+        <span className="text-xs font-semibold text-accent-light group-hover:text-ink-primary transition-colors">
           View Certificate
         </span>
-        <span className="w-8 h-8 rounded-full border border-accent/30 flex items-center justify-center text-accent-light group-hover:bg-accent group-hover:border-accent group-hover:text-white transition-all duration-300">
+        <span className="w-8 h-8 rounded-full border border-accent/30 flex items-center justify-center text-accent-light group-hover:bg-accent group-hover:border-accent group-hover:text-ink-primary transition-all duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="7" y1="17" x2="17" y2="7" />
             <polyline points="7 7 17 7 17 17" />
@@ -42,7 +42,7 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
     </>
   )
 
-  const sharedClassName = 'group flex flex-col justify-between gap-4 bg-bg-card border border-white/[0.06] rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-accent/50 hover:bg-bg-hover hover:shadow-glow-sm block'
+  const sharedClassName = 'group flex flex-col justify-between gap-4 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-accent/50 hover:bg-bg-hover hover:shadow-glow-sm block'
 
   const motionProps = {
     initial: { opacity: 0, y: 30 },

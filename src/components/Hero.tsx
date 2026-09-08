@@ -84,7 +84,7 @@ export default function Hero() {
               <motion.img
                 src={profileImage}
                 alt={meta.name}
-                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-white/10 shadow-2xl z-10"
+                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-border shadow-2xl z-10"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ type: "spring" as const, stiffness: 300, damping: 20 }}
               />

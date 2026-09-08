@@ -29,11 +29,11 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ scale: 1.02 }}
-      className="group flex flex-col bg-bg-card border border-white/[0.06] hover:border-accent/40 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-glow-sm hover:bg-bg-hover relative"
+      className="group flex flex-col bg-bg-card border border-border hover:border-accent/40 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-glow-sm hover:bg-bg-hover relative"
     >
       {/* Project Image */}
       {image && (
-        <div className="w-full h-48 overflow-hidden relative border-b border-white/[0.06]">
+        <div className="w-full h-48 overflow-hidden relative border-b border-border">
           <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
           <img 
             src={image} 
@@ -48,11 +48,11 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
         <div className="flex justify-between items-start mb-4">
           <span className="text-3xl filter drop-shadow-md">{emoji}</span>
         </div>
-        <h3 className="text-base font-bold text-white mb-2 leading-snug">{title}</h3>
+        <h3 className="text-base font-bold text-ink-primary mb-2 leading-snug">{title}</h3>
         <p className="text-sm text-ink-secondary leading-relaxed mb-8 flex-1">{description}</p>
         
         {/* Bottom section with Tags and Links */}
-        <div className="flex justify-between items-end gap-4 mt-auto pt-4 border-t border-white/[0.05]">
+        <div className="flex justify-between items-end gap-4 mt-auto pt-4 border-t border-border">
           <div className="flex flex-wrap gap-2 flex-1">
             {tags.map((tag) => <Tag key={tag} small>{tag}</Tag>)}
           </div>
@@ -62,7 +62,7 @@ function ProjectCard({ emoji, image, title, description, tags, links, index }: t
               href={links.github} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-ink-muted hover:text-white transition-colors"
+              className="text-ink-muted hover:text-ink-primary transition-colors"
               title="View Source on GitHub"
             >
               <GithubIcon className="w-5 h-5" />
