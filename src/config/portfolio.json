@@ -220,15 +220,18 @@
   "certifications": [
     {
       "name": "Data Analytics Job Simulation",
-      "issuer": "Deloitte Australia"
+      "issuer": "Deloitte Australia",
+      "link": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6a8a7b72841fdedde7f9d013_1787469332744_completion_certificate.pdf"
     },
     {
       "name": "GenAI Powered Data Analytics Job Simulation",
-      "issuer": "Tata"
+      "issuer": "Tata",
+      "link": "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6a8a7b72841fdedde7f9d013_1787478101416_completion_certificate.pdf"
     },
     {
       "name": "Introduction to Cybersecurity Job Simulation",
-      "issuer": "Commonwealth Bank"
+      "issuer": "Commonwealth Bank",
+      "link": "https://www.theforage.com/completion-certificates/2sNmYuurxgpFYawco/x52Jy9s26xNbZkTQ7_2sNmYuurxgpFYawco_6a8a7b72841fdedde7f9d013_1787506814078_completion_certificate.pdf"
     },
     {
       "name": "SQL (Basic) Certificate",
