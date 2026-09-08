@@ -59,11 +59,9 @@ export default function Hero() {
             </motion.p>
 
             {/* Tagline */}
-            <motion.div variants={itemVariants} className="bg-bg-card/40 backdrop-blur-md border border-accent/20 rounded-xl p-5 max-w-lg mb-8 shadow-[0_0_15px_rgba(var(--accent-rgb),0.1)]">
-              <p className="text-ink-secondary text-sm sm:text-base leading-relaxed font-medium">
-                {meta.tagline}
-              </p>
-            </motion.div>
+            <motion.p variants={itemVariants} className="text-ink-primary text-sm sm:text-base leading-relaxed max-w-lg mb-8 font-semibold drop-shadow-md">
+              {meta.tagline}
+            </motion.p>
 
             {/* CTAs */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
