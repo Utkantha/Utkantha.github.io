@@ -19,7 +19,7 @@ function CertCard({ name, issuer }: typeof certifications[0]) {
 /* ── Certifications ── */
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 px-6 bg-bg-primary">
+    <section id="certifications" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-primary">
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Credentials" title="Certifications" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

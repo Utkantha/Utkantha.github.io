@@ -1,17 +1,15 @@
 import { meta, skillGroups } from '../data/portfolioData'
 import { SectionHeader, Tag } from './ui'
 
-/* ── InfoRow — reused for each personal detail ── */
 function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex items-start gap-3 text-sm">
-      <span className="min-w-[72px] text-ink-muted font-medium">{label}</span>
-      <span className="text-ink-secondary">{children}</span>
+      <span className="min-w-[72px] text-ink-muted font-medium shrink-0">{label}</span>
+      <span className="text-ink-secondary break-all">{children}</span>
     </div>
   )
 }
 
-/* ── SkillGroup — reused for each skill category ── */
 function SkillGroup({ label, tags }: { label: string; tags: string[] }) {
   return (
     <div className="mb-4">
@@ -25,15 +23,14 @@ function SkillGroup({ label, tags }: { label: string; tags: string[] }) {
   )
 }
 
-/* ── About ── */
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-bg-secondary">
+    <section id="about" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary">
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Who I am" title="About Me" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left: Bio + info */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {/* Bio + contact info */}
           <div className="space-y-4">
             <p className="text-ink-secondary text-sm leading-relaxed">
               I'm an MCA candidate at BPUT with a deep passion for software engineering and
@@ -62,7 +59,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Skills */}
+          {/* Skills */}
           <div>
             <p className="text-sm font-semibold text-ink-primary mb-4">Technical Skills</p>
             {skillGroups.map((g) => (

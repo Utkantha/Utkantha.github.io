@@ -2,7 +2,6 @@ import { meta } from '../data/portfolioData'
 import resumePdf from '../assets/sutkanthapdr_resume.pdf'
 import { SectionHeader, Button } from './ui'
 
-/* ── SocialChip — reusable social link pill ── */
 function SocialChip({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a
@@ -16,10 +15,9 @@ function SocialChip({ href, children }: { href: string; children: React.ReactNod
   )
 }
 
-/* ── Contact ── */
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-bg-secondary">
+    <section id="contact" className="py-16 sm:py-24 px-5 sm:px-8 bg-bg-secondary">
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Get In Touch" title="Let's Work Together" />
 
@@ -29,17 +27,22 @@ export default function Contact() {
             Whether you have a project, a role, or just want to say hello — feel free to reach out!
           </p>
 
-          <a href={`mailto:${meta.email}`} className="text-accent-light text-sm font-medium border-b border-dashed border-accent/40 pb-px hover:text-white hover:border-white transition-colors">
+          <a
+            href={`mailto:${meta.email}`}
+            className="text-accent-light text-sm font-medium border-b border-dashed border-accent/40 pb-px hover:text-white hover:border-white transition-colors break-all"
+          >
             {meta.email}
           </a>
 
-          <div className="flex flex-wrap gap-3 mt-6">
+          {/* CTA buttons — stack on mobile */}
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6">
             <Button href={`mailto:${meta.email}`}>✉️ Send a Message</Button>
             <Button href={resumePdf} variant="outline" download="Utkantha_Resume.pdf">
               ↓ Download Resume
             </Button>
           </div>
 
+          {/* Social links — wrap on mobile */}
           <div className="flex flex-wrap gap-2.5 mt-8">
             <SocialChip href={meta.links.github}>
               <GithubIcon /> GitHub
@@ -57,7 +60,6 @@ export default function Contact() {
   )
 }
 
-/* ── Inline SVG icons (kept small & local) ── */
 function GithubIcon() {
   return (
     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
