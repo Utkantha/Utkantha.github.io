@@ -73,7 +73,7 @@ export default function About() {
             className="space-y-6"
           >
             <motion.p variants={textVariants} className="text-ink-primary text-base sm:text-lg leading-relaxed font-medium">
-              I'm an <span className="text-ink-primary font-semibold">MCA candidate at BPUT</span> with a deep passion for software engineering and application development. I enjoy crafting clean, performant web applications and backend systems that solve real-world problems.
+              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT</span> with a deep passion for software engineering and application development. I enjoy crafting clean, performant web applications and backend systems that solve real-world problems.
             </motion.p>
             <motion.p variants={textVariants} className="text-ink-secondary text-sm sm:text-base leading-relaxed">
               My journey spans from a Physics background to full-stack development — giving me a unique analytical perspective when approaching engineering challenges. I thrive in environments where I can build scalable architectures and interactive user experiences.
