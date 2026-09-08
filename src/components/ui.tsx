@@ -13,6 +13,8 @@ export function Badge({ children }: BadgeProps) {
   )
 }
 
+import { motion } from 'framer-motion'
+
 /* ── SectionHeader ──────────────────────────────────────────── */
 interface SectionHeaderProps {
   label: string
@@ -21,15 +23,27 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ label, title }: SectionHeaderProps) {
   return (
-    <div className="mb-10">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5 }}
+      className="mb-10"
+    >
       <p className="text-accent-light text-xs font-semibold tracking-widest uppercase mb-1.5">
         {label}
       </p>
       <h2 className="text-gradient text-3xl sm:text-4xl font-extrabold tracking-tight">
         {title}
       </h2>
-      <div className="mt-3 w-10 h-0.5 bg-gradient-accent rounded-full" />
-    </div>
+      <motion.div 
+        initial={{ width: 0 }}
+        whileInView={{ width: 40 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="mt-3 h-0.5 bg-gradient-accent rounded-full" 
+      />
+    </motion.div>
   )
 }
 

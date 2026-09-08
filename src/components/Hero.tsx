@@ -1,83 +1,149 @@
-import profileImage from '../assets/profile_image.jfif'
-import resumePdf from '../assets/sutkanthapdreddy_resume.pdf'
-import { meta } from '../data/portfolioData'
-import { Button } from './ui'
+import { motion } from 'framer-motion';
+import profileImage from '../assets/profile_image.jfif';
+import resumePdf from '../assets/sutkanthapdreddy_resume.pdf';
+import { meta } from '../data/portfolioData';
+import { Button } from './ui';
+import { Code2, Database, Layout } from 'lucide-react';
+
+/* ── Floating Animation Variants ── */
+const floatingAnimation = {
+  y: ['-10%', '10%'],
+  transition: {
+    duration: 3,
+    repeat: Infinity,
+    repeatType: "reverse" as const,
+    ease: "easeInOut" as const,
+  }
+};
+
+/* ── Floating Badge Component ── */
+function FloatingBadge({ icon: Icon, label, className, delay = 0 }: { icon: any, label: string, className: string, delay?: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, delay }}
+      className={`absolute z-20 ${className}`}
+    >
+      <motion.div
+        animate={floatingAnimation}
+        className="flex items-center gap-2 bg-bg-card/80 backdrop-blur-md border border-white/10 shadow-glow-sm rounded-full py-2 px-4"
+      >
+        <Icon className="w-4 h-4 text-accent-light" />
+        <span className="text-xs font-semibold text-white tracking-wide">{label}</span>
+      </motion.div>
+    </motion.div>
+  );
+}
 
 export default function Hero() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15, delayChildren: 0.2 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" as const, stiffness: 300, damping: 24 } }
+  };
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center pt-20 pb-14 px-5 sm:px-8 bg-gradient-hero bg-bg-primary overflow-hidden"
     >
       {/* Grid overlay */}
-      <div className="absolute inset-0 bg-grid pointer-events-none" />
+      <div className="absolute inset-0 bg-grid pointer-events-none opacity-50" />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full">
-
-        {/* Photo — top on mobile, right on desktop */}
-        <div className="flex justify-center mb-8 md:hidden">
-          <div className="relative">
-            <div className="absolute -inset-1 rounded-full bg-gradient-accent opacity-60 blur-sm" />
-            <img
-              src={profileImage}
-              alt={meta.name}
-              className="relative w-36 h-36 rounded-full object-cover object-top border-2 border-bg-primary"
-            />
-          </div>
-        </div>
-
-        {/* Two-column on desktop */}
-        <div className="flex flex-col md:grid md:grid-cols-[1fr_auto] md:gap-16 md:items-center">
-
+        <motion.div 
+          className="flex flex-col md:grid md:grid-cols-[1fr_auto] md:gap-16 md:items-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
           {/* ── Text content ── */}
-          <div>
+          <div className="order-2 md:order-1 mt-12 md:mt-0">
             {/* Status badge */}
-            <div className="flex items-center gap-2 mb-5 opacity-0 animate-fade-up delay-100">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#4ade80] animate-float shrink-0" />
-              <span className="text-xs font-semibold text-emerald-400 tracking-widest uppercase">
+            <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_12px_#4ade80] animate-pulse shrink-0" />
+              <span className="text-xs font-bold text-emerald-400 tracking-widest uppercase bg-emerald-400/10 py-1 px-3 rounded-full border border-emerald-400/20">
                 Available for opportunities
               </span>
-            </div>
+            </motion.div>
 
             {/* Name */}
-            <h1 className="text-[2.2rem] sm:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.07] mb-4 opacity-0 animate-fade-up delay-200">
-              S Utkantha<br />
-              <span className="text-gradient">Priyadarshini Reddy</span>
-            </h1>
+            <motion.div variants={itemVariants}>
+              <h1 className="text-[2.5rem] sm:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-4">
+                S Utkantha<br />
+                <span className="text-gradient">Priyadarshini Reddy</span>
+              </h1>
+            </motion.div>
 
             {/* Role */}
-            <p className="text-ink-secondary text-sm sm:text-base lg:text-lg font-normal mb-4 opacity-0 animate-fade-up delay-300">
-              <span className="text-accent-light font-semibold">MCA Candidate</span>
-              {' · '}Full-Stack Developer &amp; ML Engineer
-            </p>
+            <motion.p variants={itemVariants} className="text-ink-secondary text-base sm:text-lg lg:text-xl font-medium mb-5">
+              <span className="text-accent-light font-bold">MCA Candidate</span>
+              <span className="opacity-50 mx-2">|</span>
+              Software Developer
+            </motion.p>
 
             {/* Tagline */}
-            <p className="text-ink-secondary text-sm sm:text-base leading-relaxed max-w-lg mb-8 opacity-0 animate-fade-up delay-400">
+            <motion.p variants={itemVariants} className="text-ink-muted text-sm sm:text-base leading-relaxed max-w-lg mb-8">
               {meta.tagline}
-            </p>
+            </motion.p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3 opacity-0 animate-fade-up delay-500">
+            <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
               <Button href="#projects">View Projects →</Button>
               <Button href={resumePdf} variant="outline" download="Utkantha_Resume.pdf">
                 ↓ Download Resume
               </Button>
-            </div>
+            </motion.div>
           </div>
 
-          {/* Photo — right on desktop only */}
-          <div className="hidden md:flex justify-end opacity-0 animate-fade-up delay-200 shrink-0">
+          {/* ── Photo & Floating Skills ── */}
+          <motion.div 
+            className="order-1 md:order-2 flex justify-center items-center relative"
+            variants={itemVariants}
+          >
             <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-accent opacity-60 blur-sm" />
-              <img
+              {/* Glow Behind Image */}
+              <div className="absolute inset-0 rounded-full bg-accent/40 blur-3xl scale-125 animate-pulse" />
+              
+              <motion.img
                 src={profileImage}
                 alt={meta.name}
-                className="relative w-52 h-52 lg:w-60 lg:h-60 rounded-full object-cover object-top border-2 border-bg-primary"
+                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-white/10 shadow-2xl z-10"
+                whileHover={{ scale: 1.05, rotate: 2 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              />
+
+              {/* Floating Badges */}
+              <FloatingBadge 
+                icon={Code2} 
+                label="Python" 
+                className="-top-4 -left-8 md:-top-6 md:-left-12"
+                delay={0.2}
+              />
+              <FloatingBadge 
+                icon={Layout} 
+                label="Full-Stack" 
+                className="top-1/2 -right-12 md:-right-16 translate-x-4 md:translate-x-8"
+                delay={0.6}
+              />
+              <FloatingBadge 
+                icon={Database} 
+                label="SQL & MongoDB" 
+                className="-bottom-6 -left-4 md:-bottom-8 md:-left-8"
+                delay={0.4}
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
-  )
+  );
 }
