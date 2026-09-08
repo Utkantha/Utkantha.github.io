@@ -50,7 +50,10 @@ export interface Project {
   title: string
   description: string
   tags: string[]
-  link: string
+  links: {
+    github: string
+    website: string
+  }
 }
 
 export interface Certification {
