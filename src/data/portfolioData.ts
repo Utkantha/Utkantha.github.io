@@ -55,6 +55,7 @@ export interface Project {
 export interface Certification {
   name: string
   issuer: string
+  link?: string
 }
 
 // ── Typed exports (sourced entirely from portfolio.json) ────────
