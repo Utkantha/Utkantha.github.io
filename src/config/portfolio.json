@@ -195,6 +195,21 @@
         "github": "https://github.com/Utkantha/pawfect_match",
         "website": "https://pawfectmatch-hazel.vercel.app/"
       }
+    },
+    {
+      "emoji": "🤖",
+      "image": "/sparkai.jpg",
+      "title": "Spark AI – AI Creativity Platform",
+      "description": "Welcome to spark-AI, your one-stop destination for harnessing the power of artificial intelligence to fuel creativity and innovation.",
+      "tags": [
+        "AI",
+        "React",
+        "TypeScript"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/spark_AI",
+        "website": "https://spark-ai-kappa.vercel.app/"
+      }
     }
   ],
   "certifications": [
