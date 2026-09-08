@@ -24,8 +24,8 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
   const Icon = groupIcons[label] || Code2;
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay }}
       className="mb-6 bg-bg-card/50 border border-border p-4 rounded-xl"
@@ -52,8 +52,8 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
 
 export default function About() {
   const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
+    hidden: { opacity: 0, x: -30 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
   }
 
   return (
@@ -98,8 +98,8 @@ export default function About() {
           {/* Skills */}
           <div>
             <motion.p 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="text-lg font-bold text-ink-primary mb-6 flex items-center gap-2"
             >
