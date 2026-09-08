@@ -27,18 +27,20 @@ function CertCard({ name, issuer, link, index }: typeof certifications[0] & { in
         </div>
       </div>
 
-      {/* Bottom: always-visible "View Certificate" link */}
-      <div className="flex items-center justify-between pt-4 mt-2 border-t border-border">
-        <span className="text-xs font-semibold text-accent-light group-hover:text-ink-primary transition-colors">
-          View Certificate
-        </span>
-        <span className="w-8 h-8 rounded-full border border-accent/30 flex items-center justify-center text-accent-light group-hover:bg-accent group-hover:border-accent group-hover:text-ink-primary transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7" />
-            <polyline points="7 7 17 7 17 17" />
-          </svg>
-        </span>
-      </div>
+      {/* Bottom: conditionally-visible "View Certificate" link */}
+      {hasLink && (
+        <div className="flex items-center justify-between pt-4 mt-2 border-t border-border">
+          <span className="text-xs font-semibold text-accent-light group-hover:text-ink-primary transition-colors">
+            View Certificate
+          </span>
+          <span className="w-8 h-8 rounded-full border border-accent/30 flex items-center justify-center text-accent-light group-hover:bg-accent group-hover:border-accent group-hover:text-ink-primary transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </span>
+        </div>
+      )}
     </>
   )
 
