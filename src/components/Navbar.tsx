@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { meta, navLinks } from '../data/portfolioData'
-import resumePdf from '../assets/sutkanthapdr_resume.pdf'
+import resumePdf from "../assets/sutkanthapdreddy_resume.pdf"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)

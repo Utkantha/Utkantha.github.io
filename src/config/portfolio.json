@@ -2,8 +2,8 @@
   "meta": {
     "name": "S Utkantha Priyadarshini Reddy",
     "shortName": "Utkantha Priyadarshini",
-    "role": "MCA Candidate · Full-Stack Developer & ML Engineer",
-    "tagline": "Results-driven developer with hands-on experience in full-stack web development, machine learning, and deep learning. Passionate about building end-to-end AI-powered software solutions.",
+    "role": "MCA Candidate · Software Developer",
+    "tagline": "Motivated and detail-oriented MCA graduate (2026) with a strong foundation in software development, programming, database management, and problem-solving. Passionate about building innovative, scalable, and user-focused applications.",
     "location": "Berhampur, Ganjam, Odisha, India",
     "email": "sutkanthapdreddy@gmail.com",
     "phone": "+91-8917445015",
@@ -47,41 +47,21 @@
       ]
     },
     {
-      "label": "Frameworks & Libraries",
-      "tags": [
-        "Flask",
-        "Keras",
-        "TensorFlow",
-        "scikit-learn",
-        "NumPy",
-        "Pandas",
-        "Matplotlib"
-      ]
-    },
-    {
-      "label": "ML / AI",
-      "tags": [
-        "Deep Learning",
-        "CNN",
-        "LSTM",
-        "BiGRU",
-        "Self-Attention",
-        "Feature Engineering",
-        "Time Series",
-        "Regression",
-        "SVM"
-      ]
-    },
-    {
-      "label": "Databases & Dev Tools",
+      "label": "Databases",
       "tags": [
         "MySQL",
         "MongoDB",
-        "Oracle DB",
+        "Oracle Database"
+      ]
+    },
+    {
+      "label": "Dev Tools",
+      "tags": [
         "Git",
         "GitHub",
-        "VS Code",
-        "Jupyter Notebook"
+        "Visual Studio Code",
+        "Jupyter Notebook",
+        "GitHub Actions"
       ]
     },
     {
@@ -89,9 +69,16 @@
       "tags": [
         "Windows",
         "Linux",
-        "REST APIs",
         "Responsive Web Design",
-        "Vercel"
+        "Vercel Deployment"
+      ]
+    },
+    {
+      "label": "Productivity",
+      "tags": [
+        "MS Word",
+        "MS Excel",
+        "MS PowerPoint"
       ]
     }
   ],
@@ -102,8 +89,8 @@
       "location": "Rourkela, Odisha, India",
       "period": "Sep 2024 – Jul 2026",
       "bullets": [
-        "Focus on software development, data structures, algorithms, ML, and emerging technologies.",
-        "Building projects in deep learning, full-stack web dev, and AI-powered applications.",
+        "Pursuing MCA with focus on software development, data structures, algorithms, and emerging technologies.",
+        "Actively building projects in deep learning, full-stack web development, and AI-powered applications.",
         "Engaging in coding challenges, collaborative teamwork, and research-oriented problem solving."
       ]
     },
@@ -113,9 +100,8 @@
       "location": "Etcherla, Andhra Pradesh, India",
       "period": "Sep 2022 – Aug 2024",
       "bullets": [
-        "Graduated with 8.3 CGPA.",
-        "Competencies in analytical thinking, structured communication, and instructional design.",
-        "Expertise in innovative teaching methodologies and curriculum planning."
+        "Graduated with 8.3 CGPA; developed strong competencies in analytical thinking, structured communication, and instructional design.",
+        "Gained expertise in innovative teaching methodologies, curriculum planning, and interpersonal engagement."
       ]
     },
     {
@@ -124,35 +110,21 @@
       "location": "Berhampur, Odisha, India",
       "period": "Jul 2019 – Jul 2022",
       "bullets": [
-        "Graduated with 9.4 CGPA — secured First Position in the batch.",
-        "Strong foundation in analytical problem-solving and quantitative reasoning."
+        "Graduated with 9.4 CGPA, securing First Position in the batch.",
+        "Built a strong foundation in analytical problem-solving, quantitative reasoning, and scientific research aptitude."
       ]
     }
   ],
   "projects": [
     {
-      "emoji": "⚡",
-      "title": "Electricity Consumption Prediction",
-      "description": "End-to-end time series forecasting using a hybrid CNN-BiGRU-Self Attention deep learning architecture. Features MIC-based feature selection, MinMax normalisation, and a Flask REST API with admin-authenticated web interface for real-time predictions.",
-      "tags": [
-        "Python",
-        "Keras",
-        "CNN",
-        "BiGRU",
-        "Flask",
-        "scikit-learn"
-      ],
-      "link": "https://github.com/Utkantha"
-    },
-    {
       "emoji": "📚",
       "title": "EduLearn – E-Learning Platform",
-      "description": "Fully responsive e-learning web application built with HTML5, CSS3, and vanilla JavaScript. Deployed on Vercel with CI/CD via GitHub Actions. Mobile-first design with interactive UI components.",
+      "description": "Designed and deployed a fully responsive e-learning web application using HTML5, CSS3, and vanilla JavaScript, hosted on Vercel with CI/CD via GitHub Actions. Implemented mobile-first responsive design ensuring seamless compatibility.",
       "tags": [
         "HTML5",
         "CSS3",
         "JavaScript",
-        "GitHub Actions",
+        "Git",
         "Vercel"
       ],
       "link": "https://github.com/Utkantha"
@@ -160,13 +132,14 @@
     {
       "emoji": "🛒",
       "title": "Yamazone – E-Commerce Demo",
-      "description": "Full-stack e-commerce app inspired by Amazon. Python Flask backend with HTML/CSS/JS frontend. Features product catalog API, Add-to-Cart, Buy Now simulation, Quick View modal, and personalised recommendations.",
+      "description": "Built a full-stack e-commerce web application inspired by Amazon, with a Python Flask backend and HTML/CSS/JavaScript frontend. Implemented product catalog API, Add-to-Cart drawer with live subtotal, and Buy Now order simulation.",
       "tags": [
         "Python",
         "Flask",
+        "HTML5",
+        "CSS3",
         "JavaScript",
-        "REST API",
-        "Vercel"
+        "REST API"
       ],
       "link": "https://github.com/Utkantha"
     }
