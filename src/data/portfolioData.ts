@@ -36,6 +36,16 @@ export interface SkillGroup {
   tags: string[]
 }
 
+export interface Experience {
+  company: string
+  role: string
+  period: string
+  location: string
+  certificateLink?: string
+  recommendationLink?: string
+  bullets: string[]
+}
+
 export interface Education {
   degree: string
   institution: string
@@ -48,11 +58,12 @@ export interface Project {
   emoji: string
   image?: string
   title: string
+  category?: string
   description: string
   tags: string[]
   links: {
     github: string
-    website: string
+    website?: string
   }
 }
 
@@ -67,6 +78,7 @@ export interface Certification {
 export const meta           = config.meta           as Meta
 export const navLinks       = config.navLinks        as NavLink[]
 export const skillGroups    = config.skillGroups     as SkillGroup[]
+export const experience     = config.experience      as Experience[]
 export const education      = config.education       as Education[]
 export const projects       = config.projects        as Project[]
 export const certifications = config.certifications  as Certification[]

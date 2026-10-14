@@ -76,7 +76,7 @@ export default function Hero() {
             <motion.p variants={itemVariants} className="text-ink-secondary text-base sm:text-lg lg:text-xl font-medium mb-5">
               <span className="text-accent-light font-bold">MCA Graduate</span>
               <span className="opacity-50 mx-2">|</span>
-              Software Developer
+              Data Analyst
             </motion.p>
 
             {/* Tagline */}

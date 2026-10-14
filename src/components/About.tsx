@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion'
 import { meta, skillGroups } from '../data/portfolioData'
 import { SectionHeader } from './ui'
-import { Code2, Database, Wrench, Settings, Briefcase } from 'lucide-react'
+import { Code2, Database, Wrench, Settings, Briefcase, BarChart3 } from 'lucide-react'
 
 const groupIcons: Record<string, any> = {
+  'Languages & Analytics': Code2,
+  'Data Analysis & BI': BarChart3,
+  'Databases & Querying': Database,
+  'Tools & Environment': Wrench,
   'Languages': Code2,
   'Databases': Database,
   'Dev Tools': Wrench,
@@ -73,10 +77,10 @@ export default function About() {
             className="space-y-6"
           >
             <motion.p variants={textVariants} className="text-ink-primary text-base sm:text-lg leading-relaxed font-medium">
-              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT</span> with a deep passion for software engineering and application development. I enjoy crafting clean, performant web applications and backend systems that solve real-world problems.
+              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT (8.28 CGPA)</span> with practical industry experience as a <span className="text-accent-light font-semibold">Data Analytics Intern at CodeAlpha</span>.
             </motion.p>
             <motion.p variants={textVariants} className="text-ink-secondary text-sm sm:text-base leading-relaxed">
-              My journey spans from a Physics background to full-stack development — giving me a unique analytical perspective when approaching engineering challenges. I thrive in environments where I can build scalable architectures and interactive user experiences.
+              Proficient in Exploratory Data Analysis (EDA), statistical modeling, automated web scraping, data cleaning, and database querying using Python and SQL. Skilled in transforming complex datasets into actionable business intelligence through interactive visualizations and executive reports.
             </motion.p>
 
             <motion.div variants={textVariants} className="pt-4 space-y-3 bg-bg-primary/50 border border-border p-5 rounded-2xl">

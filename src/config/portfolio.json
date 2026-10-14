@@ -2,8 +2,8 @@
   "meta": {
     "name": "S Utkantha Priyadarshini Reddy",
     "shortName": "Utkantha",
-    "role": "MCA Graduate · Software Developer",
-    "tagline": "MCA graduate specializing in full-stack development and software engineering. Passionate about building scalable applications with Python, JavaScript, and modern web frameworks. Eager to leverage strong analytical skills and creativity to craft innovative software solutions.",
+    "role": "MCA Graduate · Data Analyst",
+    "tagline": "Results-driven MCA graduate (8.28 CGPA) with practical experience in Data Analytics at CodeAlpha. Proficient in Python, SQL, Exploratory Data Analysis (EDA), statistical modeling, and data visualization to transform complex datasets into actionable business intelligence.",
     "location": "Berhampur, Ganjam, Odisha, India",
     "email": "sutkanthapdreddy@gmail.com",
     "phone": "+91-8917445015",
@@ -19,12 +19,16 @@
       "href": "#about"
     },
     {
-      "label": "Education",
-      "href": "#education"
+      "label": "Experience",
+      "href": "#experience"
     },
     {
       "label": "Projects",
       "href": "#projects"
+    },
+    {
+      "label": "Education",
+      "href": "#education"
     },
     {
       "label": "Certifications",
@@ -37,53 +41,67 @@
   ],
   "skillGroups": [
     {
-      "label": "Languages",
+      "label": "Languages & Analytics",
       "tags": [
         "Python",
         "SQL",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "React.js",
-        "TypeScript"
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Matplotlib",
+        "Seaborn",
+        "HTML5",
+        "CSS3"
       ]
     },
     {
-      "label": "Databases",
+      "label": "Data Analysis & BI",
+      "tags": [
+        "Data Visualisation",
+        "Exploratory Data Analysis (EDA)",
+        "Web Scraping (BeautifulSoup)",
+        "Data Cleaning",
+        "Tableau",
+        "Power BI",
+        "MS Excel"
+      ]
+    },
+    {
+      "label": "Databases & Querying",
       "tags": [
         "MySQL",
+        "PostgreSQL",
         "MongoDB",
         "Oracle Database",
         "Microsoft SQL Server"
       ]
     },
     {
-      "label": "Data & Analytics",
+      "label": "Tools & Environment",
       "tags": [
-        "Tableau",
-        "Power BI",
-        "Data Analysis",
-        "Data Visualization",
-        "MS Excel"
-      ]
-    },
-    {
-      "label": "Dev Tools",
-      "tags": [
+        "Jupyter Notebook",
         "Git",
         "GitHub",
         "Visual Studio Code",
-        "Jupyter Notebook",
-        "GitHub Actions"
+        "Vercel",
+        "Google Colab"
       ]
-    },
+    }
+  ],
+  "experience": [
     {
-      "label": "OS / Others",
-      "tags": [
-        "Windows",
-        "Linux",
-        "Responsive Web Design",
-        "Vercel Deployment"
+      "company": "CodeAlpha",
+      "role": "Data Analytics Intern (Virtual)",
+      "period": "Sep 2026",
+      "location": "Remote, India",
+      "certificateLink": "https://drive.google.com/file/d/1lPrbBNTddLA6mZQECIXGGGtLFllWDyIg/view?usp=drivesdk",
+      "recommendationLink": "https://drive.google.com/file/d/1pX9RULlyNTsCxTUojZNWY5xuoaIyYMGY/view?usp=drivesdk",
+      "bullets": [
+        "Conducted comprehensive Exploratory Data Analysis (EDA) and statistical modeling using Python (Pandas, NumPy) to evaluate business metrics, revenue distributions, and promotional performance.",
+        "Engineered automated web scraping pipelines using BeautifulSoup to parse HTML DOM trees, handle pagination, and compile custom structured CSV datasets from dynamic web sources.",
+        "Built informative data visualizations and dashboards using Matplotlib and Seaborn, authoring data-driven executive reports that translate raw metrics into strategic business insights.",
+        "Queried relational databases via advanced SQL (multi-table joins, subqueries, aggregations) to ensure clean data pipelines for analysis and visualization workflows.",
+        "Awarded a verified Certificate of Completion and an official Letter of Recommendation for analytical excellence across all milestones."
       ]
     }
   ],
@@ -94,9 +112,9 @@
       "location": "Rourkela, Odisha, India",
       "period": "Sep 2024 – Jun 2026",
       "bullets": [
-        "Successfully completed MCA with 8.28 CGPA, strengthened problem-solving, analytical thinking, software development skills through academic coursework and hands-on projects.",
+        "Graduated with 8.28 CGPA; strengthened problem-solving, analytical thinking, and software development skills through academic coursework and hands-on projects.",
         "Developed academic projects using Python, deep learning, full-stack web development, and Artificial Intelligence.",
-        "Gained strong knowledge of Data structures, Algorithms, Database Management Systems(DBMS), Operating Systems, Object-Oriented Programming(OOP), & software engineering."
+        "Gained strong knowledge of Data Structures, Algorithms, Database Management Systems (DBMS), Operating Systems, and Object-Oriented Programming (OOP)."
       ]
     },
     {
@@ -122,9 +140,59 @@
   ],
   "projects": [
     {
+      "emoji": "📊",
+      "title": "E-Commerce Exploratory Data Analysis (EDA)",
+      "category": "Data Analytics",
+      "description": "Analyzed real-world e-commerce sales records, uncovering monthly revenue trends, product category distributions, and promotional discounts impact on net sales volume. Conducted statistical outlier detection and generated automated visual reports communicating actionable business growth recommendations.",
+      "tags": [
+        "Python",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Excel"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/codealpha_exploratory-dataanalysis-DA",
+        "website": ""
+      }
+    },
+    {
+      "emoji": "📈",
+      "title": "Superstore Sales Data Visualization & Reporting",
+      "category": "Data Analytics",
+      "description": "Performed deep-dive sales and profitability analysis across customer segments, geographic regions, and merchandise subcategories. Authored a structured business analytics report with custom visualizations highlighting loss-making categories and high-margin inventory drivers.",
+      "tags": [
+        "Python",
+        "Pandas",
+        "Seaborn",
+        "Matplotlib"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/codealpha_datavisualisation-DA",
+        "website": ""
+      }
+    },
+    {
+      "emoji": "🕸️",
+      "title": "Multi-Source Web Scraping Data Pipeline",
+      "category": "Data Analytics",
+      "description": "Developed modular web scrapers for extracting structured data from global sources including World Bank economic news, NASA archives, and e-commerce catalogs. Handled complex HTML navigation, user-agent headers, and automated data cleaning to export publication-ready tabular datasets.",
+      "tags": [
+        "Python",
+        "BeautifulSoup",
+        "Requests",
+        "CSV"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/codealpha_webscraping-DA",
+        "website": ""
+      }
+    },
+    {
       "emoji": "📚",
       "image": "/edulearn.jpg",
       "title": "EduLearn – E-Learning Platform",
+      "category": "Full-Stack Development",
       "description": "Designed and deployed a fully responsive e-learning web application using HTML5, CSS3, and vanilla JavaScript, hosted on Vercel with CI/CD via GitHub Actions. Implemented mobile-first responsive design ensuring seamless compatibility.",
       "tags": [
         "HTML5",
@@ -142,6 +210,7 @@
       "emoji": "🛒",
       "image": "/yamazone.jpg",
       "title": "Yamazone – E-Commerce Demo",
+      "category": "Full-Stack Development",
       "description": "Built a full-stack e-commerce web application inspired by Amazon, with a Python Flask backend and HTML/CSS/JavaScript frontend. Implemented product catalog API, Add-to-Cart drawer with live subtotal, and Buy Now order simulation.",
       "tags": [
         "Python",
@@ -160,6 +229,7 @@
       "emoji": "✨",
       "image": "/auradex.jpg",
       "title": "Aura Dex – Pokédex Web App",
+      "category": "Full-Stack Development",
       "description": "AuraDex is a modern, beautifully designed full-stack Pokédex application featuring a premium glassmorphism UI, smooth animations, and real-time data powered by the PokéAPI.",
       "tags": [
         "TypeScript",
@@ -175,6 +245,7 @@
       "emoji": "☁️",
       "image": "/nexuscloud.jpg",
       "title": "Nexus Cloud – Cloud Storage Drive",
+      "category": "Full-Stack Development",
       "description": "A modern, full-stack cloud storage application featuring secure file management, granular sharing permissions, and a responsive interface built with the MERN stack.",
       "tags": [
         "TypeScript",
@@ -190,6 +261,7 @@
       "emoji": "🐾",
       "image": "/pawfectmatch.jpg",
       "title": "Pawfect Match – Pet Adoption Platform",
+      "category": "Full-Stack Development",
       "description": "A modern, full-stack MERN pet adoption platform designed to seamlessly connect animal welfare organizations with loving homes.",
       "tags": [
         "JavaScript",
@@ -205,6 +277,7 @@
       "emoji": "🤖",
       "image": "/sparkai.jpg",
       "title": "Spark AI – AI Creativity Platform",
+      "category": "Full-Stack Development",
       "description": "Welcome to spark-AI, your one-stop destination for harnessing the power of artificial intelligence to fuel creativity and innovation.",
       "tags": [
         "AI",
@@ -224,12 +297,12 @@
       "link": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6a8a7b72841fdedde7f9d013_1787469332744_completion_certificate.pdf"
     },
     {
-      "name": "GenAI Powered Data Analytics Job Simulation",
+      "name": "GenAI Powered Data Analytics",
       "issuer": "Tata",
       "link": "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6a8a7b72841fdedde7f9d013_1787478101416_completion_certificate.pdf"
     },
     {
-      "name": "Introduction to Cybersecurity Job Simulation",
+      "name": "Cybersecurity Job Simulation",
       "issuer": "Commonwealth Bank",
       "link": "https://www.theforage.com/completion-certificates/2sNmYuurxgpFYawco/x52Jy9s26xNbZkTQ7_2sNmYuurxgpFYawco_6a8a7b72841fdedde7f9d013_1787506814078_completion_certificate.pdf"
     },
