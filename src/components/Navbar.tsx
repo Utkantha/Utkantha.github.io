@@ -82,7 +82,12 @@ export default function Navbar() {
           </button>
 
           {/* Dual Resume Dropdown */}
-          <div className="relative" ref={resumeMenuRef}>
+          <div 
+            className="relative" 
+            ref={resumeMenuRef}
+            onMouseEnter={() => setResumeMenuOpen(true)}
+            onMouseLeave={() => setResumeMenuOpen(false)}
+          >
             <button
               onClick={() => setResumeMenuOpen(!resumeMenuOpen)}
               className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-accent/40 text-accent-light hover:bg-accent/10 hover:border-accent transition-all whitespace-nowrap flex items-center gap-1.5 cursor-pointer"

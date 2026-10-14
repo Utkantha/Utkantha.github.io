@@ -69,10 +69,11 @@ interface ButtonProps {
   download?: string
   children: ReactNode
   external?: boolean
+  className?: string
 }
 
-export function Button({ href, variant = 'primary', download, children, external }: ButtonProps) {
-  const base = 'inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200'
+export function Button({ href, variant = 'primary', download, children, external, className = '' }: ButtonProps) {
+  const base = 'inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200'
   const styles = {
     primary: 'bg-gradient-accent text-white shadow-glow-sm hover:-translate-y-0.5 hover:shadow-glow', // keep text-white since it's a solid gradient button
     outline: 'border border-accent/40 text-ink-primary hover:bg-accent/8 hover:border-accent-light hover:-translate-y-0.5',
@@ -84,7 +85,7 @@ export function Button({ href, variant = 'primary', download, children, external
       download={download}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className={`${base} ${styles[variant]}`}
+      className={`${base} ${styles[variant]} ${className}`}
     >
       {children}
     </a>

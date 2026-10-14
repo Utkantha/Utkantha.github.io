@@ -48,15 +48,15 @@ export default function Hero() {
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid pointer-events-none opacity-50" />
 
-      <div className="relative z-10 max-w-5xl mx-auto w-full">
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
         <motion.div 
-          className="flex flex-col md:grid md:grid-cols-[1fr_auto] md:gap-16 md:items-center"
+          className="flex flex-col md:grid md:grid-cols-[1fr_auto] md:gap-12 lg:gap-16 md:items-center"
           variants={containerVariants}
           initial="hidden"
           animate="show"
         >
           {/* ── Text content ── */}
-          <div className="order-2 md:order-1 mt-12 md:mt-0">
+          <div className="order-2 md:order-1 mt-12 md:mt-0 max-w-2xl">
             {/* Status badge */}
             <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_12px_#4ade80] animate-pulse shrink-0" />
@@ -87,15 +87,34 @@ export default function Hero() {
               {meta.tagline}
             </motion.p>
 
-            {/* CTAs with both resumes (View Projects, then Data Analytics, then Full Stack Development) */}
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
-              <Button href="#projects">View Projects →</Button>
-              <Button href={resumeDaPdf} variant="outline" download="sutkanthapdr_data-analytics.pdf">
-                ↓ Resume (Data Analytics)
-              </Button>
-              <Button href={resumeFsdPdf} variant="outline" download="sutkanthapdr_full-stack-development.pdf">
-                ↓ Resume (Full Stack Development)
-              </Button>
+            {/* CTAs with both resumes in exact order: 1. View Projects →, 2. Resume (Data Analytics), 3. Resume (Full Stack Development) */}
+            <motion.div variants={itemVariants} className="pt-2">
+              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+                <Button 
+                  href="#projects"
+                  className="whitespace-nowrap px-4 py-2.5 text-xs sm:text-sm font-semibold shrink-0"
+                >
+                  View Projects →
+                </Button>
+                <div className="flex flex-wrap sm:flex-nowrap items-center gap-2.5 sm:gap-3">
+                  <Button 
+                    href={resumeDaPdf} 
+                    variant="outline" 
+                    download="sutkanthapdr_data-analytics.pdf"
+                    className="whitespace-nowrap px-3.5 sm:px-4 py-2.5 text-xs sm:text-sm bg-bg-card/60 shrink-0"
+                  >
+                    ↓ Resume (Data Analytics)
+                  </Button>
+                  <Button 
+                    href={resumeFsdPdf} 
+                    variant="outline" 
+                    download="sutkanthapdr_full-stack-development.pdf"
+                    className="whitespace-nowrap px-3.5 sm:px-4 py-2.5 text-xs sm:text-sm bg-bg-card/60 shrink-0"
+                  >
+                    ↓ Resume (Full Stack Development)
+                  </Button>
+                </div>
+              </div>
             </motion.div>
           </div>
 
