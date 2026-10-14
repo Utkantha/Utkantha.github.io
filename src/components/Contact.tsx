@@ -35,14 +35,14 @@ export default function Contact() {
             {meta.email}
           </a>
 
-          {/* CTA buttons */}
+          {/* CTA buttons (Data Analytics first, Full Stack Development second) */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6">
             <Button href={`mailto:${meta.email}`}>✉️ Send a Message</Button>
-            <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
-              ↓ Resume (Full Stack)
-            </Button>
             <Button href={resumeDaPdf} variant="outline" download="Utkantha_Reddy_Data_Analytics_Resume.pdf">
               ↓ Resume (Data Analytics)
+            </Button>
+            <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
+              ↓ Resume (Full Stack Development)
             </Button>
           </div>
 

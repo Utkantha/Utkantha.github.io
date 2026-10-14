@@ -78,10 +78,10 @@ export default function About() {
             className="space-y-6"
           >
             <motion.p variants={textVariants} className="text-ink-primary text-base sm:text-lg leading-relaxed font-medium">
-              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT (8.28 CGPA)</span> with practical industry experience across two core software disciplines: as a <span className="text-accent-light font-semibold">Full Stack Development Intern</span> and <span className="text-accent-light font-semibold">Data Analytics Intern</span> at CodeAlpha.
+              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT (8.28 CGPA)</span> with practical industry experience across two core software disciplines: as a <span className="text-accent-light font-semibold">Data Analytics Intern</span> and <span className="text-accent-light font-semibold">Full Stack Development Intern</span> at CodeAlpha.
             </motion.p>
             <motion.p variants={textVariants} className="text-ink-secondary text-sm sm:text-base leading-relaxed">
-              Proven capability in engineering responsive, end-to-end web applications across Python (Django) and JavaScript (Node.js, Express, React) frameworks, coupled with analytical rigor in Exploratory Data Analysis (EDA), automated web scraping, data modeling, and interactive business intelligence reporting with SQL and Python.
+              Proven analytical rigor in Exploratory Data Analysis (EDA), automated web scraping, statistical data modeling, and interactive business intelligence reporting with SQL and Python, coupled with strong capability in architecting responsive, end-to-end web applications across Python (Django) and JavaScript (Node.js, Express, React) frameworks.
             </motion.p>
 
             <motion.div variants={textVariants} className="pt-4 space-y-3 bg-bg-primary/50 border border-border p-5 rounded-2xl">

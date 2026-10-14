@@ -77,7 +77,9 @@ export default function Hero() {
             <motion.p variants={itemVariants} className="text-ink-secondary text-base sm:text-lg lg:text-xl font-medium mb-5">
               <span className="text-accent-light font-bold">MCA Graduate</span>
               <span className="opacity-50 mx-2">|</span>
-              Full Stack Developer & Data Analyst
+              Data Analyst
+              <span className="opacity-50 mx-2">|</span>
+              Full Stack Developer
             </motion.p>
 
             {/* Tagline */}
@@ -85,14 +87,14 @@ export default function Hero() {
               {meta.tagline}
             </motion.p>
 
-            {/* CTAs with both resumes */}
+            {/* CTAs with both resumes (Data Analytics first, Full Stack Development second) */}
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
               <Button href="#projects">View Projects →</Button>
-              <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
-                ↓ Resume (Full Stack)
-              </Button>
               <Button href={resumeDaPdf} variant="outline" download="Utkantha_Reddy_Data_Analytics_Resume.pdf">
                 ↓ Resume (Data Analytics)
+              </Button>
+              <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
+                ↓ Resume (Full Stack Development)
               </Button>
             </motion.div>
           </div>

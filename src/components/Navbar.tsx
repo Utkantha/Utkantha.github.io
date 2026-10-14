@@ -93,16 +93,7 @@ export default function Navbar() {
             </button>
 
             {resumeMenuOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-bg-card border border-border rounded-xl shadow-2xl p-1.5 z-50">
-                <a
-                  href={resumeFsdPdf}
-                  download="Utkantha_Reddy_Full_Stack_Resume.pdf"
-                  onClick={() => setResumeMenuOpen(false)}
-                  className="flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-ink-primary hover:bg-accent/10 hover:text-accent-light rounded-lg transition-colors"
-                >
-                  <span className="text-sm">💻</span>
-                  <span>Full Stack Resume</span>
-                </a>
+              <div className="absolute right-0 mt-2 w-64 bg-bg-card border border-border rounded-xl shadow-2xl p-1.5 z-50">
                 <a
                   href={resumeDaPdf}
                   download="Utkantha_Reddy_Data_Analytics_Resume.pdf"
@@ -110,7 +101,16 @@ export default function Navbar() {
                   className="flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-ink-primary hover:bg-accent/10 hover:text-accent-light rounded-lg transition-colors"
                 >
                   <span className="text-sm">📊</span>
-                  <span>Data Analytics Resume</span>
+                  <span>Download Resume (Data Analytics)</span>
+                </a>
+                <a
+                  href={resumeFsdPdf}
+                  download="Utkantha_Reddy_Full_Stack_Resume.pdf"
+                  onClick={() => setResumeMenuOpen(false)}
+                  className="flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-ink-primary hover:bg-accent/10 hover:text-accent-light rounded-lg transition-colors"
+                >
+                  <span className="text-sm">💻</span>
+                  <span>Download Resume (Full Stack Development)</span>
                 </a>
               </div>
             )}
@@ -144,23 +144,23 @@ export default function Navbar() {
             </li>
           ))}
 
-          {/* Mobile dual resumes */}
+          {/* Mobile dual resumes (Data Analytics first, Full Stack second) */}
           <li className="pt-2 mt-2 border-t border-border flex flex-col gap-2">
-            <a
-              href={resumeFsdPdf}
-              download="Utkantha_Reddy_Full_Stack_Resume.pdf"
-              onClick={() => setOpen(false)}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold border border-accent/30 text-accent-light bg-accent/5 hover:bg-accent/15"
-            >
-              💻 Download Full Stack Resume
-            </a>
             <a
               href={resumeDaPdf}
               download="Utkantha_Reddy_Data_Analytics_Resume.pdf"
               onClick={() => setOpen(false)}
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold border border-accent/30 text-accent-light bg-accent/5 hover:bg-accent/15"
             >
-              📊 Download Data Analytics Resume
+              📊 Download Resume (Data Analytics)
+            </a>
+            <a
+              href={resumeFsdPdf}
+              download="Utkantha_Reddy_Full_Stack_Resume.pdf"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold border border-accent/30 text-accent-light bg-accent/5 hover:bg-accent/15"
+            >
+              💻 Download Resume (Full Stack Development)
             </a>
           </li>
         </ul>

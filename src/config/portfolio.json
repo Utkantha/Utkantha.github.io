@@ -2,8 +2,8 @@
   "meta": {
     "name": "S Utkantha Priyadarshini Reddy",
     "shortName": "Utkantha",
-    "role": "MCA Graduate · Full Stack Developer & Data Analyst",
-    "tagline": "Results-driven MCA graduate (8.28 CGPA) with hands-on experience as both a Full Stack Development Intern and Data Analytics Intern at CodeAlpha. Proven track record architecting scalable web applications across Python (Django) & JavaScript (Node/React) ecosystems, and turning complex datasets into strategic business intelligence.",
+    "role": "MCA Graduate · Data Analyst · Full Stack Developer",
+    "tagline": "Results-driven MCA graduate (8.28 CGPA) with hands-on experience as both a Data Analytics Intern and Full Stack Development Intern at CodeAlpha. Proven track record turning complex datasets into strategic business intelligence and architecting scalable web applications across Python and JavaScript ecosystems.",
     "location": "Berhampur, Ganjam, Odisha, India",
     "email": "sutkanthapdreddy@gmail.com",
     "phone": "+91-8917445015",
@@ -52,17 +52,6 @@
       ]
     },
     {
-      "label": "Frameworks & Full-Stack",
-      "tags": [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "Django",
-        "Flask",
-        "RESTful APIs"
-      ]
-    },
-    {
       "label": "Data Analysis & BI",
       "tags": [
         "Exploratory Data Analysis (EDA)",
@@ -83,6 +72,17 @@
         "SQLite",
         "Oracle Database",
         "Microsoft SQL Server"
+      ]
+    },
+    {
+      "label": "Frameworks & Full-Stack",
+      "tags": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask",
+        "RESTful APIs"
       ]
     },
     {
@@ -110,6 +110,21 @@
   "experience": [
     {
       "company": "CodeAlpha",
+      "role": "Data Analytics Intern (Virtual)",
+      "period": "Sep 2026",
+      "location": "Remote, India",
+      "certificateLink": "https://drive.google.com/file/d/1lPrbBNTddLA6mZQECIXGGGtLFllWDyIg/view?usp=drivesdk",
+      "recommendationLink": "https://drive.google.com/file/d/1pX9RULlyNTsCxTUojZNWY5xuoaIyYMGY/view?usp=drivesdk",
+      "bullets": [
+        "Conducted comprehensive Exploratory Data Analysis (EDA) and statistical modeling using Python (Pandas, NumPy) to evaluate business metrics, revenue distributions, and promotional performance.",
+        "Engineered automated web scraping pipelines using BeautifulSoup to parse HTML DOM trees, handle pagination, and compile custom structured CSV datasets from dynamic web sources.",
+        "Built informative data visualizations and dashboards using Matplotlib and Seaborn, authoring data-driven executive reports that translate raw metrics into strategic business insights.",
+        "Queried relational databases via advanced SQL (multi-table joins, subqueries, aggregations) to ensure clean data pipelines for analysis and visualization workflows.",
+        "Awarded a verified Certificate of Completion and an official Letter of Recommendation for analytical excellence across all milestones."
+      ]
+    },
+    {
+      "company": "CodeAlpha",
       "role": "Full Stack Development Intern (Virtual)",
       "period": "Sep 2026",
       "location": "Remote, India",
@@ -122,21 +137,6 @@
         "Engineered mobile-first, cross-browser compatible user interfaces applying responsive web design principles and clean UI/UX standards.",
         "Managed collaborative codebases using Git and GitHub with structured version control, modular code architecture, and continuous deployment workflows.",
         "Awarded a verified Certificate of Completion and an official Letter of Recommendation for technical and project excellence."
-      ]
-    },
-    {
-      "company": "CodeAlpha",
-      "role": "Data Analytics Intern (Virtual)",
-      "period": "Sep 2026",
-      "location": "Remote, India",
-      "certificateLink": "https://drive.google.com/file/d/1lPrbBNTddLA6mZQECIXGGGtLFllWDyIg/view?usp=drivesdk",
-      "recommendationLink": "https://drive.google.com/file/d/1pX9RULlyNTsCxTUojZNWY5xuoaIyYMGY/view?usp=drivesdk",
-      "bullets": [
-        "Conducted comprehensive Exploratory Data Analysis (EDA) and statistical modeling using Python (Pandas, NumPy) to evaluate business metrics, revenue distributions, and promotional performance.",
-        "Engineered automated web scraping pipelines using BeautifulSoup to parse HTML DOM trees, handle pagination, and compile custom structured CSV datasets from dynamic web sources.",
-        "Built informative data visualizations and dashboards using Matplotlib and Seaborn, authoring data-driven executive reports that translate raw metrics into strategic business insights.",
-        "Queried relational databases via advanced SQL (multi-table joins, subqueries, aggregations) to ensure clean data pipelines for analysis and visualization workflows.",
-        "Awarded a verified Certificate of Completion and an official Letter of Recommendation for analytical excellence across all milestones."
       ]
     }
   ],
