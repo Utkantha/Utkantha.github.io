@@ -87,13 +87,13 @@ export default function Hero() {
               {meta.tagline}
             </motion.p>
 
-            {/* CTAs with both resumes (Data Analytics first, Full Stack Development second) */}
+            {/* CTAs with both resumes (View Projects, then Data Analytics, then Full Stack Development) */}
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
               <Button href="#projects">View Projects →</Button>
-              <Button href={resumeDaPdf} variant="outline" download="Utkantha_Reddy_Data_Analytics_Resume.pdf">
+              <Button href={resumeDaPdf} variant="outline" download="sutkanthapdr_data-analytics.pdf">
                 ↓ Resume (Data Analytics)
               </Button>
-              <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
+              <Button href={resumeFsdPdf} variant="outline" download="sutkanthapdr_full-stack-development.pdf">
                 ↓ Resume (Full Stack Development)
               </Button>
             </motion.div>

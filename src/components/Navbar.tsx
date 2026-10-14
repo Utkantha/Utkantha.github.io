@@ -96,7 +96,7 @@ export default function Navbar() {
               <div className="absolute right-0 mt-2 w-64 bg-bg-card border border-border rounded-xl shadow-2xl p-1.5 z-50">
                 <a
                   href={resumeDaPdf}
-                  download="Utkantha_Reddy_Data_Analytics_Resume.pdf"
+                  download="sutkanthapdr_data-analytics.pdf"
                   onClick={() => setResumeMenuOpen(false)}
                   className="flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-ink-primary hover:bg-accent/10 hover:text-accent-light rounded-lg transition-colors"
                 >
@@ -105,7 +105,7 @@ export default function Navbar() {
                 </a>
                 <a
                   href={resumeFsdPdf}
-                  download="Utkantha_Reddy_Full_Stack_Resume.pdf"
+                  download="sutkanthapdr_full-stack-development.pdf"
                   onClick={() => setResumeMenuOpen(false)}
                   className="flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-ink-primary hover:bg-accent/10 hover:text-accent-light rounded-lg transition-colors"
                 >
@@ -148,7 +148,7 @@ export default function Navbar() {
           <li className="pt-2 mt-2 border-t border-border flex flex-col gap-2">
             <a
               href={resumeDaPdf}
-              download="Utkantha_Reddy_Data_Analytics_Resume.pdf"
+              download="sutkanthapdr_data-analytics.pdf"
               onClick={() => setOpen(false)}
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold border border-accent/30 text-accent-light bg-accent/5 hover:bg-accent/15"
             >
@@ -156,7 +156,7 @@ export default function Navbar() {
             </a>
             <a
               href={resumeFsdPdf}
-              download="Utkantha_Reddy_Full_Stack_Resume.pdf"
+              download="sutkanthapdr_full-stack-development.pdf"
               onClick={() => setOpen(false)}
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold border border-accent/30 text-accent-light bg-accent/5 hover:bg-accent/15"
             >
