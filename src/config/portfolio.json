@@ -2,8 +2,8 @@
   "meta": {
     "name": "S Utkantha Priyadarshini Reddy",
     "shortName": "Utkantha",
-    "role": "MCA Graduate · Data Analyst",
-    "tagline": "Results-driven MCA graduate (8.28 CGPA) with practical experience in Data Analytics at CodeAlpha. Proficient in Python, SQL, Exploratory Data Analysis (EDA), statistical modeling, and data visualization to transform complex datasets into actionable business intelligence.",
+    "role": "MCA Graduate · Full Stack Developer & Data Analyst",
+    "tagline": "Results-driven MCA graduate (8.28 CGPA) with hands-on experience as both a Full Stack Development Intern and Data Analytics Intern at CodeAlpha. Proven track record architecting scalable web applications across Python (Django) & JavaScript (Node/React) ecosystems, and turning complex datasets into strategic business intelligence.",
     "location": "Berhampur, Ganjam, Odisha, India",
     "email": "sutkanthapdreddy@gmail.com",
     "phone": "+91-8917445015",
@@ -41,24 +41,32 @@
   ],
   "skillGroups": [
     {
-      "label": "Languages & Analytics",
+      "label": "Languages & Core",
       "tags": [
         "Python",
+        "JavaScript",
+        "TypeScript",
         "SQL",
-        "Pandas",
-        "NumPy",
-        "Scikit-learn",
-        "Matplotlib",
-        "Seaborn",
         "HTML5",
         "CSS3"
       ]
     },
     {
+      "label": "Frameworks & Full-Stack",
+      "tags": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask",
+        "RESTful APIs"
+      ]
+    },
+    {
       "label": "Data Analysis & BI",
       "tags": [
-        "Data Visualisation",
         "Exploratory Data Analysis (EDA)",
+        "Data Visualisation (Matplotlib, Seaborn)",
         "Web Scraping (BeautifulSoup)",
         "Data Cleaning",
         "Tableau",
@@ -70,25 +78,52 @@
       "label": "Databases & Querying",
       "tags": [
         "MySQL",
-        "PostgreSQL",
         "MongoDB",
+        "PostgreSQL",
+        "SQLite",
         "Oracle Database",
         "Microsoft SQL Server"
       ]
     },
     {
-      "label": "Tools & Environment",
+      "label": "Developer Tools & Cloud",
       "tags": [
-        "Jupyter Notebook",
         "Git",
         "GitHub",
         "Visual Studio Code",
+        "Jupyter Notebook",
+        "GitHub Actions",
         "Vercel",
         "Google Colab"
+      ]
+    },
+    {
+      "label": "Practices & Concepts",
+      "tags": [
+        "Full-Stack Architecture",
+        "MVC/MVT",
+        "CRUD Operations",
+        "Responsive Web Design"
       ]
     }
   ],
   "experience": [
+    {
+      "company": "CodeAlpha",
+      "role": "Full Stack Development Intern (Virtual)",
+      "period": "Sep 2026",
+      "location": "Remote, India",
+      "certificateLink": "https://drive.google.com/file/d/1lPrbBNTddLA6mZQECIXGGGtLFllWDyIg/view?usp=drivesdk",
+      "recommendationLink": "https://drive.google.com/file/d/1pX9RULlyNTsCxTUojZNWY5xuoaIyYMGY/view?usp=drivesdk",
+      "bullets": [
+        "Developed, tested, and deployed scalable full-stack web applications utilizing modern frontend, backend, and database architectures.",
+        "Designed and integrated RESTful APIs to handle seamless client-server communication, state management, and persistent CRUD operations.",
+        "Implemented secure user authentication, session management, and database schemas for reliable data handling and access control.",
+        "Engineered mobile-first, cross-browser compatible user interfaces applying responsive web design principles and clean UI/UX standards.",
+        "Managed collaborative codebases using Git and GitHub with structured version control, modular code architecture, and continuous deployment workflows.",
+        "Awarded a verified Certificate of Completion and an official Letter of Recommendation for technical and project excellence."
+      ]
+    },
     {
       "company": "CodeAlpha",
       "role": "Data Analytics Intern (Virtual)",
@@ -189,6 +224,43 @@
       }
     },
     {
+      "emoji": "🛍️",
+      "title": "Full-Stack E-Commerce Web Application",
+      "category": "Full-Stack Development",
+      "description": "Built an end-to-end e-commerce platform using Django and SQLite, featuring secure user authentication, product catalog browsing, persistent cart state management, dynamic filtering via Django ORM, and an order checkout pipeline.",
+      "tags": [
+        "Python",
+        "Django",
+        "SQLite",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Vercel"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/yamazone",
+        "website": "https://yamazone.vercel.app/"
+      }
+    },
+    {
+      "emoji": "💬",
+      "title": "Social Media Platform Web Application",
+      "category": "Full-Stack Development",
+      "description": "Engineered a full-stack social networking application with a Node.js and Express.js backend handling REST API routing and data models. Features user profiles, real-time dynamic post feeds, comment threads, and a relational like/follow system.",
+      "tags": [
+        "Node.js",
+        "Express.js",
+        "JavaScript",
+        "RESTful API",
+        "HTML5",
+        "CSS3"
+      ],
+      "links": {
+        "github": "https://github.com/Utkantha/Nexuscloud",
+        "website": "https://utkantha.github.io/Nexuscloud/"
+      }
+    },
+    {
       "emoji": "📚",
       "image": "/edulearn.jpg",
       "title": "EduLearn – E-Learning Platform",
@@ -204,25 +276,6 @@
       "links": {
         "github": "https://github.com/Utkantha/edulearn",
         "website": "https://edulearn-indol.vercel.app/"
-      }
-    },
-    {
-      "emoji": "🛒",
-      "image": "/yamazone.jpg",
-      "title": "Yamazone – E-Commerce Demo",
-      "category": "Full-Stack Development",
-      "description": "Built a full-stack e-commerce web application inspired by Amazon, with a Python Flask backend and HTML/CSS/JavaScript frontend. Implemented product catalog API, Add-to-Cart drawer with live subtotal, and Buy Now order simulation.",
-      "tags": [
-        "Python",
-        "Flask",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "REST API"
-      ],
-      "links": {
-        "github": "https://github.com/Utkantha/yamazone",
-        "website": "https://yamazone.vercel.app/"
       }
     },
     {

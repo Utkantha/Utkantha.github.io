@@ -1,5 +1,6 @@
 import { meta } from '../data/portfolioData'
-import resumePdf from '../assets/sutkanthapdreddy_resume.pdf'
+import resumeFsdPdf from '../assets/utkanthareddyfsd_resume.pdf'
+import resumeDaPdf from '../assets/utkanthareddy_da_resume.pdf'
 import { SectionHeader, Button } from './ui'
 
 function SocialChip({ href, children }: { href: string; children: React.ReactNode }) {
@@ -23,8 +24,8 @@ export default function Contact() {
 
         <div className="max-w-xl">
           <p className="text-ink-secondary text-sm leading-relaxed mb-6">
-            I'm currently open to software engineering and data science opportunities.
-            Whether you have a project, a role, or just want to say hello — feel free to reach out!
+            I'm currently open to full stack software engineering and data analytics opportunities.
+            Whether you have an opening, a project, or just want to connect — feel free to reach out!
           </p>
 
           <a
@@ -34,11 +35,14 @@ export default function Contact() {
             {meta.email}
           </a>
 
-          {/* CTA buttons — stack on mobile */}
+          {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6">
             <Button href={`mailto:${meta.email}`}>✉️ Send a Message</Button>
-            <Button href={resumePdf} variant="outline" download="Utkantha_Resume.pdf">
-              ↓ Download Resume
+            <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
+              ↓ Resume (Full Stack)
+            </Button>
+            <Button href={resumeDaPdf} variant="outline" download="Utkantha_Reddy_Data_Analytics_Resume.pdf">
+              ↓ Resume (Data Analytics)
             </Button>
           </div>
 

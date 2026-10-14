@@ -1,17 +1,18 @@
 import { motion } from 'framer-motion'
 import { meta, skillGroups } from '../data/portfolioData'
 import { SectionHeader } from './ui'
-import { Code2, Database, Wrench, Settings, Briefcase, BarChart3 } from 'lucide-react'
+import { Code2, Database, Wrench, BarChart3, Layers, Cpu, Briefcase } from 'lucide-react'
 
 const groupIcons: Record<string, any> = {
-  'Languages & Analytics': Code2,
+  'Languages & Core': Code2,
+  'Frameworks & Full-Stack': Layers,
   'Data Analysis & BI': BarChart3,
   'Databases & Querying': Database,
-  'Tools & Environment': Wrench,
+  'Developer Tools & Cloud': Wrench,
+  'Practices & Concepts': Cpu,
   'Languages': Code2,
   'Databases': Database,
   'Dev Tools': Wrench,
-  'OS / Others': Settings,
   'Productivity': Briefcase,
 }
 
@@ -32,7 +33,7 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay }}
-      className="mb-6 bg-bg-card/50 border border-border p-4 rounded-xl"
+      className="mb-5 bg-bg-card/50 border border-border p-4 rounded-xl hover:border-accent/40 transition-colors"
     >
       <div className="flex items-center gap-2 mb-3">
         <Icon className="w-4 h-4 text-accent-light" />
@@ -44,7 +45,7 @@ function SkillGroup({ label, tags, delay }: { label: string; tags: string[], del
         {tags.map((tag) => (
           <span 
             key={tag} 
-            className="text-xs font-medium bg-black/5 dark:bg-white/5 border border-border text-ink-secondary py-1.5 px-3 rounded-lg hover:bg-black/10 hover:dark:bg-white/10 hover:text-ink-primary transition-colors cursor-default"
+            className="text-xs font-medium bg-black/5 dark:bg-white/5 border border-border text-ink-secondary py-1 px-2.5 rounded-lg hover:bg-black/10 hover:dark:bg-white/10 hover:text-ink-primary transition-colors cursor-default"
           >
             {tag}
           </span>
@@ -65,7 +66,7 @@ export default function About() {
       <div className="max-w-5xl mx-auto">
         <SectionHeader label="Who I am" title="About Me" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1.1fr] gap-12 lg:gap-16">
           {/* Bio + contact info */}
           <motion.div 
             initial="hidden"
@@ -77,10 +78,10 @@ export default function About() {
             className="space-y-6"
           >
             <motion.p variants={textVariants} className="text-ink-primary text-base sm:text-lg leading-relaxed font-medium">
-              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT (8.28 CGPA)</span> with practical industry experience as a <span className="text-accent-light font-semibold">Data Analytics Intern at CodeAlpha</span>.
+              I'm an <span className="text-ink-primary font-semibold">MCA graduate from BPUT (8.28 CGPA)</span> with practical industry experience across two core software disciplines: as a <span className="text-accent-light font-semibold">Full Stack Development Intern</span> and <span className="text-accent-light font-semibold">Data Analytics Intern</span> at CodeAlpha.
             </motion.p>
             <motion.p variants={textVariants} className="text-ink-secondary text-sm sm:text-base leading-relaxed">
-              Proficient in Exploratory Data Analysis (EDA), statistical modeling, automated web scraping, data cleaning, and database querying using Python and SQL. Skilled in transforming complex datasets into actionable business intelligence through interactive visualizations and executive reports.
+              Proven capability in engineering responsive, end-to-end web applications across Python (Django) and JavaScript (Node.js, Express, React) frameworks, coupled with analytical rigor in Exploratory Data Analysis (EDA), automated web scraping, data modeling, and interactive business intelligence reporting with SQL and Python.
             </motion.p>
 
             <motion.div variants={textVariants} className="pt-4 space-y-3 bg-bg-primary/50 border border-border p-5 rounded-2xl">
@@ -94,6 +95,11 @@ export default function About() {
               <InfoRow label="GitHub">
                 <a href={meta.links.github} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:underline font-medium">
                   github.com/Utkantha
+                </a>
+              </InfoRow>
+              <InfoRow label="LinkedIn">
+                <a href={meta.links.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:underline font-medium">
+                  linkedin.com/in/s-utkantha-priyadarshini-reddy
                 </a>
               </InfoRow>
             </motion.div>
@@ -110,7 +116,7 @@ export default function About() {
               Technical Arsenal
             </motion.p>
             {skillGroups.map((g, index) => (
-              <SkillGroup key={g.label} label={g.label} tags={g.tags} delay={index * 0.1} />
+              <SkillGroup key={g.label} label={g.label} tags={g.tags} delay={index * 0.08} />
             ))}
           </div>
         </div>

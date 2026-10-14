@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import profileImage from '../assets/prfile_nobg.png';
-import resumePdf from '../assets/sutkanthapdreddy_resume.pdf';
+import resumeFsdPdf from '../assets/utkanthareddyfsd_resume.pdf';
+import resumeDaPdf from '../assets/utkanthareddy_da_resume.pdf';
 import { meta } from '../data/portfolioData';
 import { Button } from './ui';
 
@@ -76,7 +77,7 @@ export default function Hero() {
             <motion.p variants={itemVariants} className="text-ink-secondary text-base sm:text-lg lg:text-xl font-medium mb-5">
               <span className="text-accent-light font-bold">MCA Graduate</span>
               <span className="opacity-50 mx-2">|</span>
-              Data Analyst
+              Full Stack Developer & Data Analyst
             </motion.p>
 
             {/* Tagline */}
@@ -84,11 +85,14 @@ export default function Hero() {
               {meta.tagline}
             </motion.p>
 
-            {/* CTAs */}
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
+            {/* CTAs with both resumes */}
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
               <Button href="#projects">View Projects →</Button>
-              <Button href={resumePdf} variant="outline" download="Utkantha_Resume.pdf">
-                ↓ Download Resume
+              <Button href={resumeFsdPdf} variant="outline" download="Utkantha_Reddy_Full_Stack_Resume.pdf">
+                ↓ Resume (Full Stack)
+              </Button>
+              <Button href={resumeDaPdf} variant="outline" download="Utkantha_Reddy_Data_Analytics_Resume.pdf">
+                ↓ Resume (Data Analytics)
               </Button>
             </motion.div>
           </div>
