@@ -224,43 +224,6 @@
       }
     },
     {
-      "emoji": "🛍️",
-      "title": "Full-Stack E-Commerce Web Application",
-      "category": "Full-Stack Development",
-      "description": "Built an end-to-end e-commerce platform using Django and SQLite, featuring secure user authentication, product catalog browsing, persistent cart state management, dynamic filtering via Django ORM, and an order checkout pipeline.",
-      "tags": [
-        "Python",
-        "Django",
-        "SQLite",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Vercel"
-      ],
-      "links": {
-        "github": "https://github.com/Utkantha/yamazone",
-        "website": "https://yamazone.vercel.app/"
-      }
-    },
-    {
-      "emoji": "💬",
-      "title": "Social Media Platform Web Application",
-      "category": "Full-Stack Development",
-      "description": "Engineered a full-stack social networking application with a Node.js and Express.js backend handling REST API routing and data models. Features user profiles, real-time dynamic post feeds, comment threads, and a relational like/follow system.",
-      "tags": [
-        "Node.js",
-        "Express.js",
-        "JavaScript",
-        "RESTful API",
-        "HTML5",
-        "CSS3"
-      ],
-      "links": {
-        "github": "https://github.com/Utkantha/Nexuscloud",
-        "website": "https://utkantha.github.io/Nexuscloud/"
-      }
-    },
-    {
       "emoji": "📚",
       "image": "/edulearn.jpg",
       "title": "EduLearn – E-Learning Platform",
