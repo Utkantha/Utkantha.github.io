@@ -11,17 +11,25 @@
     <meta name="description" content="Portfolio of S Utkantha Priyadarshini Reddy — MCA Graduate, Data Analyst, and Full Stack Developer." />
     <title>Utkantha | Portfolio</title>
 
-    <!-- Open Graph / WhatsApp Preview Tags (No old profile picture) -->
+    <!-- Open Graph / WhatsApp Preview Tags -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Utkantha Portfolio" />
     <meta property="og:url" content="https://utkantha.github.io/" />
     <meta property="og:title" content="Utkantha | Portfolio" />
     <meta property="og:description" content="MCA Graduate · Data Analyst · Full Stack Developer" />
+    <meta property="og:image" content="https://utkantha.github.io/profile-preview.jpg" />
+    <meta property="og:image:secure_url" content="https://utkantha.github.io/profile-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" content="S Utkantha Priyadarshini Reddy" />
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:url" content="https://utkantha.github.io/" />
     <meta name="twitter:title" content="Utkantha | Portfolio" />
     <meta name="twitter:description" content="MCA Graduate · Data Analyst · Full Stack Developer" />
+    <meta name="twitter:image" content="https://utkantha.github.io/profile-preview.jpg" />
   </head>
   <body>
     <div id="root"></div>
